@@ -1,6 +1,6 @@
 import sys
 import os
-from datetime import datetime, timedelta
+from datetime import datetime
 
 # Ensure parent directory is in sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
@@ -8,7 +8,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 from backend.app.db.session import engine, Base, SessionLocal
 from backend.app.db.models import Subject, Topic, Availability, PlanSession
 from backend.app.services.scheduler import scheduler
-from backend.app.services.effort_estimator import effort_estimator
+from backend.app.services.sample_dataset import add_sample_dataset
 
 def seed():
     print("🌱 Initializing Database schema and seeding sample data...")
@@ -31,32 +31,12 @@ def seed():
     print("✅ Seeded weekly availability schedule (18:00 - 21:00).")
 
     # 2. Seed Subjects & Topics
-    subj1 = Subject(
-        name="Physics",
-        exam_date=(today + timedelta(days=12)).strftime("%Y-%m-%d"),
-        weightage=8.5
-    )
-    subj2 = Subject(
-        name="Mathematics",
-        exam_date=(today + timedelta(days=18)).strftime("%Y-%m-%d"),
-        weightage=9.0
-    )
-    db.add_all([subj1, subj2])
-    db.flush()
-
-    topics = [
-        Topic(subject_id=subj1.id, name="Optics & Wave Motion", difficulty=4, confidence=2, est_hours=4.0),
-        Topic(subject_id=subj1.id, name="Thermodynamics", difficulty=3, confidence=3, est_hours=3.0),
-        Topic(subject_id=subj2.id, name="Calculus & Derivatives", difficulty=5, confidence=1, est_hours=6.0),
-        Topic(subject_id=subj2.id, name="Linear Algebra", difficulty=2, confidence=4, est_hours=2.0),
-    ]
-    db.add_all(topics)
-    db.commit()
-    print(f"✅ Seeded {len([subj1, subj2])} subjects and {len(topics)} topics.")
-
-    # 3. Generate initial sample study plan
+    add_sample_dataset(db)
     subjects_db = db.query(Subject).all()
     topics_db = db.query(Topic).all()
+    print(f"✅ Seeded {len(subjects_db)} subjects and {len(topics_db)} topics.")
+
+    # 3. Generate initial sample study plan
     avail_db = db.query(Availability).all()
 
     subjects_dict = [{"id": s.id, "name": s.name, "exam_date": s.exam_date, "weightage": s.weightage} for s in subjects_db]

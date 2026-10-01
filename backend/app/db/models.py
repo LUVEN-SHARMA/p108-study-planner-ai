@@ -1,6 +1,6 @@
-from sqlalchemy import Column, Integer, String, Float, ForeignKey, DateTime, Date
+from sqlalchemy import Column, Integer, String, Float, ForeignKey, DateTime, Date, Text
 from sqlalchemy.orm import relationship
-from datetime import datetime
+from datetime import datetime, timezone
 from backend.app.db.session import Base
 
 class Subject(Base):
@@ -58,3 +58,18 @@ class ProgressLog(Base):
     note = Column(String, nullable=True)
 
     session = relationship("PlanSession", back_populates="logs")
+
+class DailyTask(Base):
+    __tablename__ = "daily_tasks"
+
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String(160), nullable=False)
+    task_date = Column(String, nullable=False, index=True)
+    start = Column(String, nullable=True)
+    note = Column(Text, nullable=True)
+    status = Column(String, nullable=False, default="pending")
+    created_at = Column(
+        DateTime,
+        default=lambda: datetime.now(timezone.utc).replace(tzinfo=None),
+        nullable=False,
+    )

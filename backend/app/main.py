@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from backend.app.db.session import engine, Base
-from backend.app.api.routes import goals, availability, plan, sessions
+from backend.app.api.routes import goals, availability, plan, sessions, daily_tasks
 from backend.app.config import settings
 
 # Create database tables
@@ -27,6 +27,7 @@ app.include_router(goals.router)
 app.include_router(availability.router)
 app.include_router(plan.router)
 app.include_router(sessions.router)
+app.include_router(daily_tasks.router)
 
 @app.get("/", tags=["Health Check"])
 def root():

@@ -1,24 +1,29 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime, timedelta
-from utils import parse_goals_api, create_subject_api, get_subjects_api, delete_subject_api
+from utils import (
+    check_backend_health,
+    parse_goals_api,
+    create_subject_api,
+    load_sample_dataset_api,
+    get_subjects_api,
+    delete_subject_api,
+)
 
 st.set_page_config(page_title="Goals & Subjects - AI Study Planner", page_icon="🎯", layout="wide")
 
-st.title("🎯 Goals & Subject Management")
-st.write("Add your study goals using AI Free-Text Parsing or structured forms.")
+st.title("🎯 Goals & Subjects")
+st.write("Add sample data, enter subjects manually, or turn study goals into a plan.")
 
-# Tab 1: AI Free-Text Goal Parser | Tab 2: Manual Subject Entry | Tab 3: Current Subjects
-tab1, tab2, tab3 = st.tabs(["✨ AI Free-Text Goal Parser", "➕ Manual Subject & Topic Form", "📋 Current Subjects List"])
+subjects_tab, manual_tab, ai_tab = st.tabs(["📋 Subjects", "➕ Add Subject", "✨ AI Goal Parser"])
 
-with tab1:
+with ai_tab:
     st.subheader("Extract Tasks using AI (Gemini)")
     st.write("Describe your upcoming exams, weak topics, and target dates in natural language.")
     
-    sample_text = "Physics exam on 20 Oct, weak in optics. Math exam on 25 Oct, difficult in calculus."
     free_text_input = st.text_area(
         "Enter your goals or paste exam syllabus:",
-        value=sample_text,
+        placeholder="e.g. Physics exam on 20 Oct, weak in optics. Math exam on 25 Oct, difficult in calculus.",
         height=100
     )
     
@@ -29,7 +34,12 @@ with tab1:
                 st.session_state["parsed_goals"] = parsed["subjects"]
                 if parsed.get("clarification_needed"):
                     st.warning(f"⚠️ {parsed['clarification_needed']}")
-                st.success("Successfully parsed goals into structured subjects & topics!")
+                if parsed.get("parser_mode") == "local":
+                    st.warning("Gemini was unavailable, so these results were extracted locally from your text.")
+                elif parsed["subjects"]:
+                    st.success("Successfully parsed your goals into structured subjects and topics.")
+                else:
+                    st.error("No subjects were found. Add a subject name and exam details, then try again.")
             else:
                 st.error("Could not parse text. Please try refining your goal description.")
 
@@ -72,63 +82,105 @@ with tab1:
                     else:
                         st.error(f"Error: {res}")
 
-with tab2:
+with manual_tab:
     st.subheader("Add Subject & Topics Manually")
+    topic_count = int(st.number_input("Number of topics", min_value=1, max_value=10, value=1))
     with st.form("manual_subject_form"):
         col1, col2 = st.columns(2)
         m_subj_name = col1.text_input("Subject Name", placeholder="e.g. Computer Science")
         m_exam_date = col2.date_input("Exam Date", value=datetime.now().date() + timedelta(days=14))
         m_weightage = st.slider("Subject Weightage (1 = Low, 10 = High)", 1.0, 10.0, 5.0)
 
-        st.markdown("---")
-        st.write("Add Initial Topic:")
-        t_col1, t_col2, t_col3, t_col4 = st.columns([3, 2, 2, 2])
-        m_tname = t_col1.text_input("Topic Name", placeholder="e.g. Data Structures")
-        m_diff = t_col2.number_input("Difficulty (1-5)", 1, 5, 3)
-        m_conf = t_col3.number_input("Confidence (1-5)", 1, 5, 3)
-        m_esth = t_col4.number_input("Estimated Hours", 0.5, 20.0, 3.0)
+        topics_payload = []
+        for topic_index in range(topic_count):
+            st.markdown(f"**Topic {topic_index + 1}**")
+            t_col1, t_col2, t_col3, t_col4 = st.columns([3, 2, 2, 2])
+            topic_name = t_col1.text_input(
+                "Topic Name",
+                placeholder="e.g. Data Structures",
+                key=f"manual_topic_name_{topic_index}",
+            )
+            difficulty = t_col2.number_input(
+                "Difficulty (1-5)", 1, 5, 3, key=f"manual_topic_difficulty_{topic_index}"
+            )
+            confidence = t_col3.number_input(
+                "Confidence (1-5)", 1, 5, 3, key=f"manual_topic_confidence_{topic_index}"
+            )
+            estimated_hours = t_col4.number_input(
+                "Estimated Hours", 0.5, 20.0, 3.0, key=f"manual_topic_hours_{topic_index}"
+            )
+            topics_payload.append({
+                "name": topic_name,
+                "difficulty": difficulty,
+                "confidence": confidence,
+                "est_hours": estimated_hours,
+            })
 
-        submitted = st.form_submit_button("➕ Save Subject & Topic", type="primary")
+        submitted = st.form_submit_button("➕ Save Subject & Topics", type="primary")
         if submitted:
-            if not m_subj_name or not m_tname:
-                st.error("Please fill in both Subject Name and Topic Name.")
+            if not m_subj_name.strip() or any(not topic["name"].strip() for topic in topics_payload):
+                st.error("Please enter a subject name and a name for every topic.")
             else:
                 payload = {
-                    "name": m_subj_name,
+                    "name": m_subj_name.strip(),
                     "exam_date": m_exam_date.strftime("%Y-%m-%d"),
                     "weightage": m_weightage,
-                    "topics": [{
-                        "name": m_tname,
-                        "difficulty": m_diff,
-                        "confidence": m_conf,
-                        "est_hours": m_esth
-                    }]
+                    "topics": topics_payload,
                 }
                 success, res = create_subject_api(payload)
                 if success:
-                    st.success(f"Added Subject '{m_subj_name}'!")
+                    st.session_state["subjects_notice"] = f"Added {m_subj_name.strip()} with {len(topics_payload)} topics."
                     st.rerun()
                 else:
                     st.error(f"Failed to save: {res}")
 
-with tab3:
-    st.subheader("Configured Subjects & Topics")
-    subjects = get_subjects_api()
-    if not subjects:
-        st.info("No subjects added yet. Use Tab 1 (AI Goal Parser) or Tab 2 (Manual Form) to add your subjects!")
+with subjects_tab:
+    st.subheader("Your Subjects")
+    if "subjects_notice" in st.session_state:
+        st.success(st.session_state.pop("subjects_notice"))
+
+    online, _ = check_backend_health()
+    if not online:
+        st.error("The backend is offline. Start FastAPI to load or save subjects.")
     else:
-        for s in subjects:
-            with st.expander(f"📚 {s['name']} (Exam: {s['exam_date']}, Weightage: {s['weightage']}/10)"):
-                t_list = s.get("topics", [])
-                if t_list:
-                    df = pd.DataFrame(t_list)
-                    st.table(df[["id", "name", "est_hours", "difficulty", "confidence"]])
-                else:
-                    st.write("No topics added under this subject.")
-                
-                if st.button(f"🗑️ Delete Subject #{s['id']}", key=f"del_subj_{s['id']}"):
-                    if delete_subject_api(s['id']):
-                        st.success(f"Deleted {s['name']}")
-                        st.rerun()
+        subjects = get_subjects_api()
+        sample_col, count_col = st.columns([2, 1])
+        if sample_col.button("Add Sample Dataset", type="primary"):
+            success, result = load_sample_dataset_api()
+            if success:
+                st.session_state["subjects_notice"] = (
+                    f"Added {len(result)} sample subjects. Existing subjects were left unchanged."
+                    if result else "The sample dataset is already in your subject list."
+                )
+                st.rerun()
+            st.error(f"Could not load sample data: {result}")
+
+        count_col.metric("Subjects", len(subjects))
+        if not subjects:
+            st.info("No subjects yet. Add the sample dataset or create a subject in the Add Subject tab.")
+        else:
+            overview = pd.DataFrame([
+                {
+                    "Subject": subject["name"],
+                    "Exam Date": subject["exam_date"],
+                    "Topics": len(subject.get("topics", [])),
+                    "Weightage": subject["weightage"],
+                }
+                for subject in subjects
+            ])
+            st.table(overview)
+
+            for subject in subjects:
+                with st.expander(f"{subject['name']} | Exam: {subject['exam_date']}"):
+                    topic_list = subject.get("topics", [])
+                    if topic_list:
+                        df = pd.DataFrame(topic_list)
+                        st.table(df[["id", "name", "est_hours", "difficulty", "confidence"]])
                     else:
+                        st.write("No topics added under this subject.")
+
+                    if st.button(f"Delete Subject #{subject['id']}", key=f"del_subj_{subject['id']}"):
+                        if delete_subject_api(subject["id"]):
+                            st.session_state["subjects_notice"] = f"Deleted {subject['name']}."
+                            st.rerun()
                         st.error("Delete failed.")

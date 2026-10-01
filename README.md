@@ -2,7 +2,7 @@
 
 An end-to-end, full-fledged AI-powered study planner that converts goals, subjects, deadlines, and daily availability into a feasible day-wise schedule with spaced revision (1-3-7-14 day intervals), progress tracking, and automatic re-planning when sessions are missed.
 
-Built with **Python 3.11**, **FastAPI**, **SQLite**, **Streamlit**, and **Google Gemini API**.
+Built with **FastAPI**, **SQLite**, **React**, **Vite**, and the **Google Gemini API**. The original Streamlit interface remains available as an optional frontend.
 
 ---
 
@@ -11,6 +11,7 @@ Built with **Python 3.11**, **FastAPI**, **SQLite**, **Streamlit**, and **Google
 - **✨ AI Free-Text Goal Extraction:** Converts natural language goals (e.g. *"Physics exam on 20 Oct, weak in optics"*) into structured subjects, exam dates, topics, difficulty, and confidence ratings using Gemini LLM.
 - **📊 Effort & Priority Engine:** Rule-based model estimating topic effort (hours) and weighted priority scores based on urgency, subject weightage, difficulty, and student confidence.
 - **📅 Day-Wise Priority Scheduler:** Greedy constraint-based scheduler placing study and spaced repetition revision slots within user-defined daily study availability windows.
+- **🗓️ Prompt-Guided Calendar:** Add natural-language timing and subject priorities when generating a plan, then browse sessions in a month calendar or list.
 - **⚠️ Feasibility Validator:** Detects student workload overload before showing plans and proposes actionable trade-offs.
 - **🔄 Adaptive One-Click Re-Plan:** Automatically re-allocates missed study sessions into future open slots without breaking exam deadlines.
 - **📥 .ics Calendar Export:** One-click download for syncing timetables with Google Calendar, Apple Calendar, or Outlook.
@@ -39,14 +40,16 @@ Built with **Python 3.11**, **FastAPI**, **SQLite**, **Streamlit**, and **Google
 │       ├── services/            # Estimator, Scorer, Scheduler, Replanner & ICS Export
 │       └── api/routes/          # REST API Endpoints
 ├── frontend/
-│   ├── app.py                   # Streamlit Landing Dashboard
-│   ├── utils.py                 # Backend API Client
-│   └── pages/                   # Multi-Page Streamlit App
+│   ├── app.py                   # Optional Streamlit Dashboard
+│   ├── utils.py                 # Streamlit API Client
+│   └── pages/                   # Optional Streamlit App
 │       ├── 1_Goals_and_Subjects.py
 │       ├── 2_Availability.py
 │       ├── 3_Plan_Calendar.py
 │       ├── 4_Today.py
 │       └── 5_Progress.py
+├── web/                         # React + Vite landing page and planner
+│   └── src/
 ├── tests/                       # Pytest Suite
 └── scripts/                     # Seed Data & Evaluation Scripts
 ```
@@ -79,7 +82,7 @@ Edit `.env` to add your Gemini API key:
 ```env
 GEMINI_API_KEY=your_actual_gemini_api_key_here
 LLM_PROVIDER=gemini
-LLM_MODEL=gemini-2.5-flash
+LLM_MODEL=gemini-3.8-flash
 ```
 
 ---
@@ -100,7 +103,18 @@ uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 - Backend API Docs: `http://127.0.0.1:8000/docs`
 
-### 3. Start Streamlit Frontend
+### 3. Start the React Frontend
+In a new terminal window:
+```bash
+cd web
+npm install
+npm run dev
+```
+- React Web UI: `http://127.0.0.1:5173`
+- Set `VITE_API_BASE_URL` if the FastAPI backend is not at `http://127.0.0.1:8000`.
+- In **Study plan**, enter preferences such as “Weekdays only, evenings, prioritize Biology” before generating. The calendar shows scheduled sessions by date; choose a day to view its agenda.
+
+### 4. Optional: Start the Streamlit Frontend
 In a new terminal window:
 ```bash
 source .venv/bin/activate

@@ -11,6 +11,7 @@
 | **Code Quality & Tests** | Unit & integration tests for all services | 6 test modules passing | PASSED |
 
 ## Benchmark Scenarios Tested
-1. **Scenario 1 (Normal Load):** 4 topics across 2 subjects, 14 days deadline. All sessions scheduled without conflicts.
-2. **Scenario 2 (Overload Stress Test):** 10 heavy topics, 1 hour daily study limit. Feasibility validator correctly flags overload and suggests 3 actionable trade-offs.
-3. **Scenario 3 (Adaptive Missed Day):** 2 sessions marked as missed on Day 1. Adaptive replanner successfully moves missed workload into upcoming days without breaking exam deadline constraints.
+1. **Scenario 1 (Normal Load):** 2 topics across 1 subject, 14 days deadline. All sessions scheduled without conflicts.
+2. **Scenario 2 (Overload Stress Test):** 10 heavy topics, 1 hour daily study limit. Feasibility validator correctly flags overload and suggests actionable trade-offs.
+3. **Scenario 3 (Mixed Subjects and Availability):** 6 topics across 3 subjects with staggered exam deadlines and weekday/weekend availability. The scheduler generates study and revision sessions, and the workload is feasible.
+4. **Adaptive Missed Day:** 2 sessions marked as missed on Day 1. Adaptive replanner successfully moves missed workload into upcoming days without breaking exam deadline constraints.

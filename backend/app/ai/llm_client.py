@@ -11,6 +11,8 @@ class GeminiLLMClient:
     def __init__(self):
         self.api_key = settings.GEMINI_API_KEY or os.environ.get("GEMINI_API_KEY", "")
         self.model_name = settings.LLM_MODEL
+        if self.model_name == "gemini-2.5-flash":
+            self.model_name = "gemini-3.8-flash"
         self.client = None
         self._init_client()
 
@@ -70,10 +72,12 @@ class GeminiLLMClient:
         if raw_llm_output:
             parsed = self._extract_json(raw_llm_output)
             if parsed and "subjects" in parsed and len(parsed["subjects"]) > 0:
+                parsed["parser_mode"] = "gemini"
                 return parsed
 
-        # --- Rule-Based Fallback Parser if LLM is unavailable or unparseable ---
-        return self._fallback_goal_parser(free_text, today_str)
+        parsed = self._fallback_goal_parser(free_text, today_str)
+        parsed["parser_mode"] = "local"
+        return parsed
 
     def _extract_json(self, text: str) -> Dict[str, Any]:
         """Extract JSON from markdown code blocks or raw text."""
@@ -92,66 +96,175 @@ class GeminiLLMClient:
         return {}
 
     def _fallback_goal_parser(self, text: str, today_str: str) -> Dict[str, Any]:
-        """Intelligent regex/heuristic fallback parser for student goal text."""
-        today = datetime.now()
+        """Extract known subjects, their dates, and named topics without inventing data."""
+        today = datetime.strptime(today_str, "%Y-%m-%d").date()
+        aliases = {
+            "computer science": "Computer Science",
+            "mathematics": "Mathematics",
+            "maths": "Mathematics",
+            "math": "Mathematics",
+            "physics": "Physics",
+            "phy": "Physics",
+            "chemistry": "Chemistry",
+            "chem": "Chemistry",
+            "biology": "Biology",
+            "bio": "Biology",
+            "history": "History",
+            "english": "English",
+            "economics": "Economics",
+        }
+        alias_pattern = re.compile(
+            r"(?<!\w)(" + "|".join(re.escape(alias) for alias in sorted(aliases, key=len, reverse=True)) + r")(?!\w)",
+            re.IGNORECASE,
+        )
+        subject_mentions = []
+        for match in alias_pattern.finditer(text):
+            before = text[max(0, match.start() - 24):match.start()]
+            after = text[match.end():match.end() + 24]
+            follows_exam = re.match(
+                r"\s+(?:(?:final|midterm|upcoming|board)\s+)?(?:exam|test|quiz)\b",
+                after,
+                re.IGNORECASE,
+            )
+            follows_exam_preposition = re.search(
+                r"\b(?:exam|test|quiz)\s+(?:in|for)\s+$", before, re.IGNORECASE
+            )
+            if not follows_exam and not follows_exam_preposition:
+                continue
+
+            subject_name = aliases[match.group(1).lower()]
+            start = match.start()
+            prefix = text[max(0, start - 20):start]
+            engineering_prefix = re.search(r"\b(?:engineering|engg?\.?)\s+$", prefix, re.IGNORECASE)
+            if engineering_prefix:
+                start -= len(engineering_prefix.group(0))
+                subject_name = f"Engineering {subject_name}"
+            subject_mentions.append((start, match.end(), subject_name))
+
+        # Also recognize custom names in phrases such as "an exam in sociology".
+        custom_exam_patterns = (
+            re.compile(
+                r"\b(?:exam|test|quiz)\s+(?:in|for)\s+([A-Za-z][A-Za-z &'-]*?)"
+                r"(?=\s+(?:on|about|covering|and|weak|difficult|need|in)\b|[,;.?!\n]|$)",
+                re.IGNORECASE,
+            ),
+            re.compile(
+                r"\b((?:[A-Za-z][A-Za-z&'-]*\s+){0,3}[A-Za-z][A-Za-z&'-]*)"
+                r"\s+(?:(?:final|midterm|upcoming|board)\s+)?(?:exam|test|quiz)\b",
+                re.IGNORECASE,
+            ),
+        )
+        for pattern in custom_exam_patterns:
+            for match in pattern.finditer(text):
+                name = match.group(1).strip(" -'")
+                name = re.sub(
+                    r"^(?:(?:i|we)\s+)?(?:(?:have|has)\s+)?(?:an?|the|my|upcoming|next)\s+",
+                    "",
+                    name,
+                    flags=re.IGNORECASE,
+                )
+                if name and name.lower() not in aliases:
+                    subject_mentions.append((match.start(1), match.end(1), name.title()))
+
+        subject_mentions.sort(key=lambda mention: (mention[0], -(mention[1] - mention[0])))
+        unique_mentions = []
+        for mention in subject_mentions:
+            if any(mention[0] < end and mention[1] > start for start, end, _ in unique_mentions):
+                continue
+            if unique_mentions and mention[2].casefold() == unique_mentions[-1][2].casefold():
+                continue
+            unique_mentions.append(mention)
+
         subjects_found = []
-        
-        # Simple extraction heuristics
-        lines = text.replace(",", "\n").replace(".", "\n").split("\n")
-        current_subject = "General Study"
-        exam_date = (today + timedelta(days=14)).strftime("%Y-%m-%d")
-        topics = []
-        
-        # Common subjects detection
-        known_subjects = ["Physics", "Chemistry", "Mathematics", "Math", "Biology", "Computer Science", "History", "English", "Economics"]
-        
-        # Check for exam dates in text e.g. "20 Oct", "20 October", "2026-10-20"
-        date_match = re.search(r"(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*", text, re.IGNORECASE)
-        if date_match:
-            day = int(date_match.group(1))
-            month_str = date_match.group(2)[:3].title()
-            month_num = datetime.strptime(month_str, "%b").month
-            year = today.year if month_num >= today.month else today.year + 1
-            exam_date = f"{year}-{month_num:02d}-{day:02d}"
+        clarification_messages = []
+        for index, (start, end, subject_name) in enumerate(unique_mentions):
+            segment_end = unique_mentions[index + 1][0] if index + 1 < len(unique_mentions) else len(text)
+            segment = text[start:segment_end]
+            exam_date = self._date_from_text(segment, today)
+            if exam_date is None:
+                exam_date = today + timedelta(days=14)
+                clarification_messages.append(f"Please confirm the exam date for {subject_name}.")
 
-        # Detect subjects and topics
-        text_lower = text.lower()
-        for subj in known_subjects:
-            if subj.lower() in text_lower:
-                current_subject = subj
-                break
+            topic_match = re.search(
+                r"\b(?:weak\s+in|difficult\s+in|struggling\s+with|need\s+(?:help|practice)\s+with|"
+                r"focus\s+on|covering|topics?\s*(?:include|are))\s+(.+)",
+                segment,
+                re.IGNORECASE,
+            )
+            topic_names = []
+            if topic_match:
+                topic_text = re.split(r"[.!?;\n]", topic_match.group(1), maxsplit=1)[0]
+                topic_text = re.sub(r"\s+(?:for|before)\s+(?:the\s+)?exam\b.*$", "", topic_text, flags=re.IGNORECASE)
+                topic_names = [
+                    re.sub(r"^(?:the|a|an)\s+", "", name.strip(" ,:-"), flags=re.IGNORECASE)
+                    for name in re.split(r",|\band\b", topic_text, flags=re.IGNORECASE)
+                    if name.strip(" ,:-")
+                ]
 
-        # Extract topics / weak areas
-        weak_topics = []
-        if "weak in" in text_lower or "difficult" in text_lower or "need practice" in text_lower:
-            parts = re.split(r"weak in|difficult in|need help with", text_lower)
-            if len(parts) > 1:
-                topic_words = parts[1].strip().split()[:3]
-                if topic_words:
-                    weak_topics.append(" ".join(topic_words).title())
-
-        if not weak_topics:
-            weak_topics = [f"{current_subject} Chapter 1", f"{current_subject} Core Concepts"]
-
-        for t_name in weak_topics:
-            topics.append({
-                "topic_name": t_name,
-                "difficulty": 4 if "weak" in text_lower else 3,
-                "confidence": 2 if "weak" in text_lower else 3,
-                "estimated_hours": 4.0
+            difficulty = 4 if topic_match and re.search(r"weak|difficult|struggling", topic_match.group(0), re.IGNORECASE) else 3
+            confidence = 2 if difficulty == 4 else 3
+            weight_match = re.search(
+                r"\b(?:weightage|importance)\s*(?:of|is|:)?\s*(10(?:\.0+)?|[1-9](?:\.\d+)?)",
+                segment,
+                re.IGNORECASE,
+            )
+            weightage = float(weight_match.group(1)) if weight_match else 5.0
+            subjects_found.append({
+                "subject_name": subject_name,
+                "exam_date": exam_date.strftime("%Y-%m-%d"),
+                "weightage": weightage,
+                "topics": [
+                    {
+                        "topic_name": name,
+                        "difficulty": difficulty,
+                        "confidence": confidence,
+                        "estimated_hours": 2.0,
+                    }
+                    for name in topic_names
+                ],
             })
 
-        subjects_found.append({
-            "subject_name": current_subject,
-            "exam_date": exam_date,
-            "weightage": 7.5,
-            "topics": topics
-        })
+            if not topic_names:
+                clarification_messages.append(f"Add the topics you want to study for {subject_name}.")
+
+        if not subjects_found:
+            clarification_messages.append("Include a subject name and exam date, for example: Physics exam on 20 Oct, weak in optics.")
 
         return {
             "subjects": subjects_found,
-            "clarification_needed": None
+            "clarification_needed": " ".join(clarification_messages) or None,
         }
+
+    @staticmethod
+    def _date_from_text(text: str, today):
+        """Parse common written and ISO exam dates, returning None when absent or invalid."""
+        date_patterns = (
+            r"\b(\d{4})-(\d{1,2})-(\d{1,2})\b",
+            r"\b(\d{1,2})\s+(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|"
+            r"Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)(?:\s+(\d{4}))?\b",
+            r"\b(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|"
+            r"Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+(\d{1,2})(?:,?\s+(\d{4}))?\b",
+        )
+        for pattern in date_patterns:
+            match = re.search(pattern, text, re.IGNORECASE)
+            if not match:
+                continue
+            try:
+                if pattern == date_patterns[0]:
+                    return datetime.strptime(match.group(0), "%Y-%m-%d").date()
+                day_first = match.group(1).isdigit()
+                month_text = match.group(2) if day_first else match.group(1)
+                day_text = match.group(1) if day_first else match.group(2)
+                year_text = match.group(3)
+                month = datetime.strptime(month_text[:3].title(), "%b").month
+                year = int(year_text) if year_text else today.year
+                candidate = datetime(year, month, int(day_text)).date()
+                if not year_text and candidate < today:
+                    candidate = candidate.replace(year=year + 1)
+                return candidate
+            except ValueError:
+                continue
+        return None
 
     def generate_rationale(self, schedule_summary: str) -> str:
         """Generate human-friendly rationale for the timetable."""

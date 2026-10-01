@@ -27,3 +27,7 @@ data/raw/*
 
 # Streamlit
 .streamlit/
+
+# React frontend
+web/node_modules/
+web/dist/

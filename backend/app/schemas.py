@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field
-from typing import List, Optional
+from typing import List, Optional, Literal
+from datetime import date
 
 # --- Topic Schemas ---
 class TopicBase(BaseModel):
@@ -54,6 +55,7 @@ class ExtractedSubject(BaseModel):
 class GoalParseResponse(BaseModel):
     subjects: List[ExtractedSubject]
     clarification_needed: Optional[str] = None
+    parser_mode: str = "gemini"
 
 # --- Availability Schemas ---
 class AvailabilityBase(BaseModel):
@@ -96,18 +98,41 @@ class FeasibilityResult(BaseModel):
 # --- Plan Generation Schemas ---
 class PlanGenerateRequest(BaseModel):
     start_date: Optional[str] = None # YYYY-MM-DD defaults to today
+    prompt: Optional[str] = None
 
 class PlanGenerateResponse(BaseModel):
     sessions: List[PlanSessionResponse]
     feasibility: FeasibilityResult
     rationale: str
     tips: List[str]
+    prompt_applied: Optional[str] = None
+    prompt_notes: List[str] = Field(default_factory=list)
 
 # --- Session Update Schemas ---
 class SessionUpdateStatusRequest(BaseModel):
     status: str # completed / missed / pending
     minutes_spent: Optional[int] = 0
     note: Optional[str] = None
+
+class DailyTaskCreate(BaseModel):
+    title: str = Field(min_length=1, max_length=160)
+    task_date: date
+    start: Optional[str] = None
+    note: Optional[str] = Field(default=None, max_length=1000)
+
+class DailyTaskUpdate(BaseModel):
+    status: Literal["pending", "completed", "missed"]
+
+class DailyTaskResponse(BaseModel):
+    id: int
+    title: str
+    task_date: date
+    start: Optional[str] = None
+    note: Optional[str] = None
+    status: Literal["pending", "completed", "missed"]
+
+    class Config:
+        from_attributes = True
 
 # --- Replan Schemas ---
 class ReplanResponse(BaseModel):

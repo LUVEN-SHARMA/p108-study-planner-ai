@@ -10,6 +10,7 @@ from backend.app.schemas import (
 )
 from backend.app.services.goal_parser import goal_parser_service
 from backend.app.services.effort_estimator import effort_estimator
+from backend.app.services.sample_dataset import add_sample_dataset
 
 router = APIRouter(tags=["Goals & Subjects"])
 
@@ -44,6 +45,11 @@ def create_subject(payload: SubjectCreate, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(subj)
     return subj
+
+@router.post("/subjects/sample", response_model=List[SubjectResponse], status_code=status.HTTP_201_CREATED)
+def create_sample_subjects(db: Session = Depends(get_db)):
+    """Add sample subjects that are not already present."""
+    return add_sample_dataset(db)
 
 @router.get("/subjects", response_model=List[SubjectResponse])
 def get_subjects(db: Session = Depends(get_db)):

@@ -27,6 +27,13 @@ def create_subject_api(data: dict):
     except Exception as e:
         return False, str(e)
 
+def load_sample_dataset_api():
+    try:
+        resp = requests.post(f"{API_BASE_URL}/subjects/sample", timeout=10)
+        return resp.status_code == 201, resp.json()
+    except Exception as e:
+        return False, str(e)
+
 def get_subjects_api():
     try:
         resp = requests.get(f"{API_BASE_URL}/subjects", timeout=5)

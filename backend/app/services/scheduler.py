@@ -15,13 +15,14 @@ class GreedyScheduler:
         subjects: List[Dict[str, Any]],
         topics: List[Dict[str, Any]],
         availability: List[Dict[str, Any]],
-        start_date: date = None
+        start_date: date = None,
+        preferred_subject_ids: List[int] = None,
     ) -> List[Dict[str, Any]]:
         
         if start_date is None:
             start_date = datetime.now().date()
 
-        if not availability:
+        if availability is None:
             # Default availability: Mon-Sun 18:00 - 21:00 (3 hours/day)
             availability = [{"weekday": i, "start": "18:00", "end": "21:00"} for i in range(7)]
 
@@ -32,6 +33,7 @@ class GreedyScheduler:
 
         # Build subject map
         subj_map = {s["id"]: s for s in subjects}
+        preferred_subject_ids = set(preferred_subject_ids or [])
 
         # 1. Score and rank topics
         scored_topics = []
@@ -47,6 +49,8 @@ class GreedyScheduler:
                 confidence=t.get("confidence", 3),
                 ref_date=start_date
             )
+            if t["subject_id"] in preferred_subject_ids:
+                p_score += 100.0
             est_h = t.get("est_hours") or effort_estimator.estimate_topic_effort(t.get("difficulty", 3), t.get("confidence", 3))
             
             scored_topics.append({
@@ -69,8 +73,6 @@ class GreedyScheduler:
             date_str = curr_date.strftime("%Y-%m-%d")
             weekday = curr_date.weekday()
             slots = avail_by_day.get(weekday, [])
-            if not slots:
-                slots = [("18:00", "21:00")]
 
             if date_str not in daily_schedule:
                 daily_schedule[date_str] = []
