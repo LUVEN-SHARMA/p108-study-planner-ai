@@ -1,7 +1,7 @@
 import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
-from backend.app.config import settings
+from backend.app.core.config import settings
 
 # For SQLite, check same thread
 connect_args = {"check_same_thread": False} if settings.DATABASE_URL.startswith("sqlite") else {}

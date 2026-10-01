@@ -3,7 +3,7 @@ import json
 import re
 from datetime import datetime, timedelta
 from typing import Dict, Any, List
-from backend.app.config import settings
+from backend.app.core.config import settings
 
 class GeminiLLMClient:
     """Provider adapter for Google Gemini API with robust fallbacks."""
@@ -36,7 +36,9 @@ class GeminiLLMClient:
                 self.sdk_type = None
 
     def _load_prompt(self, filename: str) -> str:
-        prompt_dir = os.path.join(os.path.dirname(__file__), "prompts")
+        prompt_dir = os.path.abspath(
+            os.path.join(os.path.dirname(__file__), "..", "..", "..", "prompts", "tasks")
+        )
         file_path = os.path.join(prompt_dir, filename)
         if os.path.exists(file_path):
             with open(file_path, "r", encoding="utf-8") as f:

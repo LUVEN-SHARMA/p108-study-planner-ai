@@ -1,50 +1,18 @@
+import json
 from datetime import date, timedelta
+from pathlib import Path
 
 from sqlalchemy.orm import Session
 
-from backend.app.db.models import Subject, Topic
+from backend.app.domain.models import Subject, Topic
 
 
 def add_sample_dataset(db: Session) -> list[Subject]:
     today = date.today()
-    sample_subjects = [
-        {
-            "name": "Physics",
-            "exam_date": today + timedelta(days=12),
-            "weightage": 8.5,
-            "topics": [
-                ("Optics & Wave Motion", 4, 2, 4.0),
-                ("Thermodynamics", 3, 3, 3.0),
-            ],
-        },
-        {
-            "name": "Mathematics",
-            "exam_date": today + timedelta(days=18),
-            "weightage": 9.0,
-            "topics": [
-                ("Calculus & Derivatives", 5, 1, 6.0),
-                ("Linear Algebra", 2, 4, 2.0),
-            ],
-        },
-        {
-            "name": "Biology",
-            "exam_date": today + timedelta(days=24),
-            "weightage": 7.5,
-            "topics": [
-                ("Cell Biology", 3, 2, 4.0),
-                ("Genetics", 4, 2, 3.0),
-            ],
-        },
-        {
-            "name": "Chemistry",
-            "exam_date": today + timedelta(days=28),
-            "weightage": 8.0,
-            "topics": [
-                ("Organic Chemistry", 5, 1, 5.0),
-                ("Chemical Equilibrium", 3, 3, 3.0),
-            ],
-        },
-    ]
+    sample_path = Path(__file__).resolve().parents[3] / "data" / "sample" / "subjects.json"
+    sample_subjects = json.loads(sample_path.read_text(encoding="utf-8"))
+    for sample in sample_subjects:
+        sample["exam_date"] = today + timedelta(days=sample.pop("exam_days_from_today"))
 
     sample_names = [sample["name"] for sample in sample_subjects]
     existing_names = {
@@ -65,13 +33,13 @@ def add_sample_dataset(db: Session) -> list[Subject]:
         db.add(subject)
         db.flush()
 
-        for name, difficulty, confidence, est_hours in sample["topics"]:
+        for topic_data in sample["topics"]:
             db.add(Topic(
                 subject_id=subject.id,
-                name=name,
-                difficulty=difficulty,
-                confidence=confidence,
-                est_hours=est_hours,
+                name=topic_data["name"],
+                difficulty=topic_data["difficulty"],
+                confidence=topic_data["confidence"],
+                est_hours=topic_data["est_hours"],
             ))
 
         added_subjects.append(subject)

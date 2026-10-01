@@ -4,7 +4,7 @@ from typing import List, Optional
 from datetime import datetime, timedelta
 
 from backend.app.db.session import get_db
-from backend.app.db.models import Subject, Topic, Availability, PlanSession
+from backend.app.domain.models import Subject, Topic, Availability, PlanSession
 from backend.app.schemas import (
     PlanGenerateRequest, PlanGenerateResponse,
     PlanSessionResponse, FeasibilityResult, ReplanResponse
@@ -13,7 +13,7 @@ from backend.app.services.scheduler import scheduler
 from backend.app.services.feasibility import feasibility_checker
 from backend.app.services.replanner import replanner
 from backend.app.services.ics_export import ics_exporter
-from backend.app.ai.hybrid_engine import hybrid_engine
+from backend.app.engines.hybrid_engine import hybrid_engine
 from backend.app.services.plan_prompt import (
     apply_plan_prompt,
     extract_prompt_exam_date,

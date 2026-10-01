@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Physics",
+    "exam_days_from_today": 12,
+    "weightage": 8.5,
+    "topics": [
+      {"name": "Optics & Wave Motion", "difficulty": 4, "confidence": 2, "est_hours": 4.0},
+      {"name": "Thermodynamics", "difficulty": 3, "confidence": 3, "est_hours": 3.0}
+    ]
+  },
+  {
+    "name": "Mathematics",
+    "exam_days_from_today": 18,
+    "weightage": 9.0,
+    "topics": [
+      {"name": "Calculus & Derivatives", "difficulty": 5, "confidence": 1, "est_hours": 6.0},
+      {"name": "Linear Algebra", "difficulty": 2, "confidence": 4, "est_hours": 2.0}
+    ]
+  },
+  {
+    "name": "Biology",
+    "exam_days_from_today": 24,
+    "weightage": 7.5,
+    "topics": [
+      {"name": "Cell Biology", "difficulty": 3, "confidence": 2, "est_hours": 4.0},
+      {"name": "Genetics", "difficulty": 4, "confidence": 2, "est_hours": 3.0}
+    ]
+  },
+  {
+    "name": "Chemistry",
+    "exam_days_from_today": 28,
+    "weightage": 8.0,
+    "topics": [
+      {"name": "Organic Chemistry", "difficulty": 5, "confidence": 1, "est_hours": 5.0},
+      {"name": "Chemical Equilibrium", "difficulty": 3, "confidence": 3, "est_hours": 3.0}
+    ]
+  }
+]

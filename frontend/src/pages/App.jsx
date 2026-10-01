@@ -21,7 +21,6 @@ import {
   ChevronRight,
   CircleHelp,
   Clock3,
-  Command,
   Download,
   Flame,
   GraduationCap,
@@ -38,7 +37,8 @@ import {
   TrendingUp,
   X,
 } from "lucide-react";
-import { api } from "./api.js";
+import { api } from "../services/api.js";
+import Brand from "../components/Brand.jsx";
 
 const NAV_ITEMS = [
   { id: "Overview", icon: LayoutDashboard },
@@ -141,17 +141,6 @@ function readProfile() {
   } catch {
     return null;
   }
-}
-
-function Brand({ inverse = false }) {
-  return (
-    <span className={`brand ${inverse ? "brand-inverse" : ""}`}>
-      <span className="brand-mark">
-        <Command size={17} strokeWidth={2.4} />
-      </span>
-      daymark<span className="brand-period">.</span>
-    </span>
-  );
 }
 
 function Landing() {

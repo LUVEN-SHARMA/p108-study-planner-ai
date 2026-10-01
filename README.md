@@ -2,7 +2,7 @@
 
 An end-to-end, full-fledged AI-powered study planner that converts goals, subjects, deadlines, and daily availability into a feasible day-wise schedule with spaced revision (1-3-7-14 day intervals), progress tracking, and automatic re-planning when sessions are missed.
 
-Built with **FastAPI**, **SQLite**, **React**, **Vite**, and the **Google Gemini API**. The original Streamlit interface remains available as an optional frontend.
+Built with **FastAPI**, **SQLite**, **React**, **Vite**, and the **Google Gemini API**. The original Streamlit interface remains available under `legacy/streamlit-app/`.
 
 ---
 
@@ -25,32 +25,42 @@ Built with **FastAPI**, **SQLite**, **React**, **Vite**, and the **Google Gemini
 ├── README.md
 ├── .env.example
 ├── .gitignore
+├── Dockerfile
+├── docker-compose.yml
+├── configs/
+│   └── project.yaml
+├── data/
+│   └── sample/subjects.json
+├── prompts/
+│   ├── system/
+│   ├── tasks/
+│   └── versions/
 ├── requirements.txt
 ├── docs/
 │   ├── architecture.md
 │   ├── demo-script.md
 │   └── evaluation-report.md
 ├── backend/
+│   ├── requirements.txt
 │   └── app/
-│       ├── main.py              # FastAPI Entry Point
-│       ├── config.py            # Environment Settings
-│       ├── schemas.py           # Pydantic Request/Response Models
-│       ├── db/                  # SQLite ORM Database
-│       ├── ai/                  # Gemini LLM Client, Hybrid Engine, Prompts & Validators
-│       ├── services/            # Estimator, Scorer, Scheduler, Replanner & ICS Export
-│       └── api/routes/          # REST API Endpoints
+│       ├── main.py              # FastAPI entry point
+│       ├── api/routes/          # REST endpoints
+│       ├── core/                # Settings and shared infrastructure
+│       ├── schemas/             # Pydantic API contracts
+│       ├── domain/              # SQLAlchemy domain models
+│       ├── engines/             # Gemini client, hybrid engine, validators
+│       ├── services/            # Scheduling, effort, replanning, export
+│       ├── repositories/        # Persistence queries
+│       ├── db/                  # SQLAlchemy engine and sessions
+│       └── tests/               # API and planner tests
 ├── frontend/
-│   ├── app.py                   # Optional Streamlit Dashboard
-│   ├── utils.py                 # Streamlit API Client
-│   └── pages/                   # Optional Streamlit App
-│       ├── 1_Goals_and_Subjects.py
-│       ├── 2_Availability.py
-│       ├── 3_Plan_Calendar.py
-│       ├── 4_Today.py
-│       └── 5_Progress.py
-├── web/                         # React + Vite landing page and planner
-│   └── src/
-├── tests/                       # Pytest Suite
+│   ├── src/
+│   │   ├── components/          # Shared interface components
+│   │   ├── pages/               # Landing, login, and planner screens
+│   │   ├── services/            # FastAPI client
+│   │   └── types/               # Frontend data contracts
+│   └── package.json
+├── legacy/streamlit-app/        # Optional original Streamlit interface
 └── scripts/                     # Seed Data & Evaluation Scripts
 ```
 
@@ -87,10 +97,17 @@ LLM_MODEL=gemini-3.8-flash
 
 ---
 
+### 4. Install React dependencies
+```bash
+cd frontend
+npm install
+cd ..
+```
+
 ## 🚀 Running the Project
 
 ### 1. Seed Database (Optional)
-Populate database with sample subjects, availability, and initial schedule:
+Populate the database with sample subjects, availability, and an initial schedule:
 ```bash
 source .venv/bin/activate
 python scripts/seed_data.py
@@ -106,21 +123,28 @@ uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
 ### 3. Start the React Frontend
 In a new terminal window:
 ```bash
-cd web
-npm install
+cd frontend
 npm run dev
 ```
 - React Web UI: `http://127.0.0.1:5173`
 - Set `VITE_API_BASE_URL` if the FastAPI backend is not at `http://127.0.0.1:8000`.
 - In **Study plan**, enter preferences such as “Weekdays only, evenings, prioritize Biology” before generating. The calendar shows scheduled sessions by date; choose a day to view its agenda.
 
-### 4. Optional: Start the Streamlit Frontend
+### 4. Optional: Start the legacy Streamlit Frontend
 In a new terminal window:
 ```bash
 source .venv/bin/activate
-streamlit run frontend/app.py
+streamlit run legacy/streamlit-app/app.py
 ```
 - Streamlit Web UI: `http://localhost:8501`
+
+### Run with Docker Compose
+After creating `.env` from `.env.example` and adding your Gemini key:
+```bash
+docker compose up --build
+```
+- React Web UI: `http://127.0.0.1:5173`
+- FastAPI docs: `http://127.0.0.1:8000/docs`
 
 ---
 
@@ -129,7 +153,7 @@ streamlit run frontend/app.py
 Run the full pytest suite:
 ```bash
 source .venv/bin/activate
-pytest tests/
+pytest backend/tests/
 ```
 
 Run stress-test evaluation script:

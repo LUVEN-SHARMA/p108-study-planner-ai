@@ -2,18 +2,18 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from backend.app.db.session import engine, Base
 from backend.app.api.routes import goals, availability, plan, sessions, daily_tasks
-from backend.app.config import settings
+from backend.app.core.config import settings
 
 # Create database tables
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="AI-Powered Study Planner API",
-    description="FastAPI Backend for Day-wise Study Scheduling with Spaced Repetition and Adaptive Re-planning",
+    description="FastAPI backend for prompt-guided study planning, spaced revision, and adaptive re-planning",
     version="1.0.0"
 )
 
-# Enable CORS for Streamlit frontend
+# Enable local web frontend access
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

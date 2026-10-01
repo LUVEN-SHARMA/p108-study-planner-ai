@@ -6,7 +6,7 @@ from datetime import datetime
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from backend.app.db.session import engine, Base, SessionLocal
-from backend.app.db.models import Subject, Topic, Availability, PlanSession
+from backend.app.domain.models import Subject, Topic, Availability, PlanSession
 from backend.app.services.scheduler import scheduler
 from backend.app.services.sample_dataset import add_sample_dataset
 

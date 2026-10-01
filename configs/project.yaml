@@ -1,0 +1,16 @@
+project:
+  name: studyplanner
+  description: AI-assisted study planning with prompt-guided scheduling
+  python: ">=3.11"
+
+api:
+  host: 127.0.0.1
+  port: 8000
+
+web:
+  host: 127.0.0.1
+  port: 5173
+  directory: frontend
+
+storage:
+  default_database: sqlite:///./studyplanner.db

@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from datetime import datetime
 
 from backend.app.db.session import get_db
-from backend.app.db.models import PlanSession, ProgressLog
+from backend.app.domain.models import PlanSession, ProgressLog
 from backend.app.schemas import SessionUpdateStatusRequest, PlanSessionResponse
 
 router = APIRouter(prefix="/sessions", tags=["Sessions & Progress"])

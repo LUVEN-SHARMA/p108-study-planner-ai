@@ -6,8 +6,8 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
 from backend.app.main import app
-from backend.app.ai.llm_client import llm_client
-from backend.app.ai.hybrid_engine import hybrid_engine
+from backend.app.engines.llm_client import llm_client
+from backend.app.engines.hybrid_engine import hybrid_engine
 from backend.app.db.session import Base, get_db
 
 client = TestClient(app)

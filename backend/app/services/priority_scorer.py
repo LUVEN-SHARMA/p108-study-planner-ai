@@ -1,5 +1,5 @@
 from datetime import datetime, date
-from backend.app.config import settings
+from backend.app.core.config import settings
 
 class PriorityScorer:
     """Calculates weighted priority score for topics based on urgency, weightage, difficulty, and weakness."""

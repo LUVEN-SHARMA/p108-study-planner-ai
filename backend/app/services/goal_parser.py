@@ -1,5 +1,5 @@
 from typing import Dict, Any
-from backend.app.ai.llm_client import llm_client
+from backend.app.engines.llm_client import llm_client
 
 class GoalParserService:
     """Service for parsing student free-text goal inputs."""

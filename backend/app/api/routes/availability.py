@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from typing import List
 
 from backend.app.db.session import get_db
-from backend.app.db.models import Availability
+from backend.app.domain.models import Availability
 from backend.app.schemas import AvailabilityCreate, AvailabilityResponse
 
 router = APIRouter(prefix="/availability", tags=["Availability"])

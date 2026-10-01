@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from typing import List
 
 from backend.app.db.session import get_db
-from backend.app.db.models import Subject, Topic
+from backend.app.domain.models import Subject, Topic
 from backend.app.schemas import (
     GoalParseRequest, GoalParseResponse,
     SubjectCreate, SubjectResponse, TopicCreate, TopicResponse

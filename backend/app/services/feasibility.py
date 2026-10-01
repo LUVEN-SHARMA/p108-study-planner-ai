@@ -1,5 +1,5 @@
 from typing import List, Dict, Any
-from backend.app.ai.validators import ScheduleValidator
+from backend.app.engines.validators import ScheduleValidator
 
 class FeasibilityChecker:
     """Calculates total study & revision workload vs available study slots."""

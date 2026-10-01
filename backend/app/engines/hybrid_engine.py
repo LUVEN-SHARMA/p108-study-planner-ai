@@ -1,6 +1,6 @@
 from typing import List, Dict, Any
-from backend.app.ai.llm_client import llm_client
-from backend.app.ai.validators import ScheduleValidator
+from backend.app.engines.llm_client import llm_client
+from backend.app.engines.validators import ScheduleValidator
 
 class HybridEngine:
     """
