@@ -380,7 +380,8 @@ function WorkspaceShell({ profile, onUpdateProfile, onLogout }) {
               <Menu size={18} />
             </button>
             <div className="breadcrumb">
-              Workspace <span>/</span> <b>{activeNav.id}</b>
+              <span className="breadcrumb-prefix">Workspace / </span>
+              <b>{activeNav.id}</b>
             </div>
           </div>
 
@@ -391,19 +392,19 @@ function WorkspaceShell({ profile, onUpdateProfile, onLogout }) {
             title="Open Command Palette (Cmd+K)"
           >
             <Search size={14} />
-            <span>Search topics or jump to...</span>
-            <kbd>⌘K</kbd>
+            <span className="cmd-text">Search topics or jump to...</span>
+            <kbd className="cmd-kbd">⌘K</kbd>
           </button>
 
           <div className="topbar-right">
             {/* Quick Timer Trigger */}
             <button
-              className="button button-outline button-small"
+              className="button button-outline button-small topbar-timer-btn"
               onClick={() => handleStartTimer()}
               title="Launch Pomodoro Timer"
             >
               <Timer size={14} />
-              <span>Focus Timer</span>
+              <span className="timer-btn-text">Focus Timer</span>
             </button>
 
             {/* Dark / Light Mode Switch */}
@@ -449,7 +450,7 @@ function WorkspaceShell({ profile, onUpdateProfile, onLogout }) {
 
             {/* Quick Sign Out from Topbar */}
             <button
-              className="icon-button danger-icon"
+              className="icon-button danger-icon topbar-signout-btn"
               onClick={handleUserSignOut}
               title="Sign Out"
             >
@@ -459,7 +460,7 @@ function WorkspaceShell({ profile, onUpdateProfile, onLogout }) {
             {/* API Status Pill */}
             <span className={`api-status ${health ? "is-online" : ""}`}>
               <i />
-              {health ? "Live Engine" : "Offline"}
+              <span className="api-status-text">{health ? "Live Engine" : "Offline"}</span>
             </span>
           </div>
         </header>
@@ -535,6 +536,33 @@ function WorkspaceShell({ profile, onUpdateProfile, onLogout }) {
           )}
         </div>
       </main>
+
+      {/* Mobile Bottom Navigation Bar for phone viewports */}
+      <nav className="mobile-bottom-nav">
+        {NAV_ITEMS.map((item) => {
+          const Icon = item.icon;
+          const isActive = activeNav.id === item.id;
+          const shortLabel =
+            item.id === "Study plan"
+              ? "Plan"
+              : item.id === "Goals & subjects"
+              ? "Subjects"
+              : item.id === "Availability"
+              ? "Hours"
+              : item.id;
+          return (
+            <button
+              key={item.id}
+              className={`mobile-nav-btn ${isActive ? "active" : ""}`}
+              onClick={() => selectPage(item.id)}
+              title={item.id}
+            >
+              <Icon size={18} />
+              <span>{shortLabel}</span>
+            </button>
+          );
+        })}
+      </nav>
 
       {/* Global Pomodoro Timer Widget & Modal */}
       <PomodoroTimer
