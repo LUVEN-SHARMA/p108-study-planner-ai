@@ -53,7 +53,7 @@ export default function ProfileModal({
         <div className="profile-modal-header">
           <div className="profile-badge">
             <User size={16} />
-            <span>Student Profile & Workspace Settings</span>
+            <span>Profile & Settings</span>
           </div>
           <button className="icon-button" onClick={onClose}>
             <X size={16} />
@@ -71,7 +71,7 @@ export default function ProfileModal({
             </div>
             <div className="avatar-color-options">
               <span className="field-hint">
-                Signed in as <b>{profile?.email || "Student Account"}</b>
+                Account: <b>{profile?.email || "Student"}</b>
               </span>
               <div className="color-swatches">
                 {COLORS.map((color) => (
@@ -88,7 +88,7 @@ export default function ProfileModal({
           </div>
 
           <label className="field-group">
-            <span>Your Name / Preferred Title</span>
+            <span>Full Name</span>
             <input
               type="text"
               value={name}
@@ -99,7 +99,7 @@ export default function ProfileModal({
           </label>
 
           <label className="field-group">
-            <span>Main Goal or Exam Target</span>
+            <span>Exam Goal</span>
             <input
               type="text"
               value={goal}
@@ -109,7 +109,7 @@ export default function ProfileModal({
           </label>
 
           <label className="field-group">
-            <span>Daily Focus Target: <b>{targetHours} hours/day</b></span>
+            <span>Daily Goal: <b>{targetHours}h / day</b></span>
             <input
               type="range"
               min="1"
@@ -123,8 +123,8 @@ export default function ProfileModal({
           <div className="profile-quick-actions">
             <div className="quick-action-item">
               <div>
-                <b>Interface Theme</b>
-                <small>Currently in {theme === "dark" ? "Dark Mode" : "Light Mode"}</small>
+                <b>Theme</b>
+                <small>{theme === "dark" ? "Dark mode active" : "Light mode active"}</small>
               </div>
               <button
                 type="button"
@@ -139,8 +139,8 @@ export default function ProfileModal({
             {onLoadSampleData && (
               <div className="quick-action-item">
                 <div>
-                  <b>Demo Sample Data</b>
-                  <small>Populate database with sample subjects & schedule</small>
+                  <b>Sample Data</b>
+                  <small>Preload demo subjects & timetable</small>
                 </div>
                 <button
                   type="button"

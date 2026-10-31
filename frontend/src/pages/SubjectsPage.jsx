@@ -115,7 +115,7 @@ export default function SubjectsPage({
         <div>
           <div className="section-kicker">CURRICULUM & TOPIC BREAKDOWN</div>
           <h1>Goals & Subjects</h1>
-          <p>Organize your exam deadlines, estimate topic difficulty, and let AI structure your syllabus.</p>
+          <p>Manage exam dates, subjects, and topics.</p>
         </div>
         <div className="heading-actions">
           <button
@@ -144,16 +144,15 @@ export default function SubjectsPage({
           <section className="panel form-panel">
             <div className="panel-header">
               <div>
-                <span className="panel-kicker">NATURAL LANGUAGE AI PARSER</span>
-                <h2>Syllabus Brain-Dump</h2>
+                <span className="panel-kicker">AI PARSER</span>
+                <h2>AI Syllabus Extractor</h2>
               </div>
               <div className="soft-icon">
                 <Sparkles size={20} />
               </div>
             </div>
             <p className="panel-subtitle">
-              Type or paste your raw exam schedule, topics you struggle with, or deadline notes. Gemini AI
-              extracts structured topics, difficulties, and target dates.
+              Paste syllabus notes or exam deadlines to auto-extract topics.
             </p>
 
             <form onSubmit={handleParseGoals} className="ai-goal-form">
@@ -266,7 +265,7 @@ export default function SubjectsPage({
             <div className="panel-header">
               <div>
                 <span className="panel-kicker">MANUAL ENTRY</span>
-                <h2>Add Subject & Topics Manually</h2>
+                <h2>Add Subject & Topics</h2>
               </div>
               <div className="soft-icon emerald">
                 <BookOpen size={20} />

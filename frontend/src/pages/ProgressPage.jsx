@@ -37,7 +37,7 @@ export default function ProgressPage({
         <div>
           <div className="section-kicker">ANALYTICS & RETENTION METRICS</div>
           <h1>Progress & Velocity</h1>
-          <p>Track your study momentum, hours logged, and spaced repetition retention curve.</p>
+          <p>Study hours, completion rate, and revision stats.</p>
         </div>
       </div>
 
@@ -67,8 +67,7 @@ export default function ProgressPage({
                 : "Your First Milestone is Near 🌱"}
             </h2>
             <p>
-              You've completed <b>{completedCount}</b> of <b>{sessions.length}</b> total scheduled study
-              and revision sessions ({totalHoursStudied} hours invested).
+              {completedCount} of {sessions.length} sessions completed ({totalHoursStudied}h studied).
             </p>
           </div>
         </section>
@@ -113,8 +112,7 @@ export default function ProgressPage({
           </div>
         </div>
         <p className="panel-subtitle">
-          Spaced reviews scheduled at 1, 3, 7, and 14-day intervals to cement information into
-          long-term neural memory.
+          Review sessions scheduled at 1, 3, 7, and 14 days to maximize retention.
         </p>
 
         <div className="intervals-bar-grid">

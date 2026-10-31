@@ -132,22 +132,21 @@ export default function LandingPage({ currentUser }) {
       <section className="landing-hero">
         <div className="hero-badge">
           <Sparkles size={14} className="hero-badge-sparkle" />
-          <span>Next-Gen Spaced Repetition & Study Scheduler</span>
+          <span>Intelligent Study Planner & Focus Engine</span>
         </div>
         <h1 className="hero-title">
           Master Any Exam Without the{" "}
           <span className="hero-gradient-text">Burnout & Cramming</span>
         </h1>
         <p className="hero-subtitle">
-          Turn your chaotic syllabus, exam deadlines, and daily hours into an adaptive,
-          spaced-repetition study schedule. Auto-adjusts when you miss a session.
+          Adaptive spaced-repetition schedules that auto-adjust when life happens.
         </p>
         <div className="hero-cta-group">
           <Link
             to={currentUser ? "/workspace/overview" : "/login"}
             className="button button-primary hero-btn"
           >
-            <span>{currentUser ? "Open Your Workspace" : "Get Started (Free)"}</span>
+            <span>{currentUser ? "Open Workspace" : "Get Started (Free)"}</span>
             <ArrowRight size={18} />
           </Link>
           <a
@@ -155,7 +154,7 @@ export default function LandingPage({ currentUser }) {
             className="button button-outline hero-btn"
             onClick={(e) => scrollToSection(e, "sample-schedule")}
           >
-            <span>Explore Interactive Week</span>
+            <span>Interactive Demo</span>
           </a>
         </div>
 
@@ -163,19 +162,19 @@ export default function LandingPage({ currentUser }) {
         <div className="hero-perks-strip">
           <div className="perk-item">
             <Zap size={16} className="perk-icon" />
-            <span>AI Free-Text Goal Parsing</span>
+            <span>AI Syllabus Extraction</span>
           </div>
           <div className="perk-item">
             <RefreshCw size={16} className="perk-icon" />
-            <span>1-Click Adaptive Re-planning</span>
+            <span>1-Click Re-planning</span>
           </div>
           <div className="perk-item">
             <Timer size={16} className="perk-icon" />
-            <span>Integrated Pomodoro Deep Work</span>
+            <span>Pomodoro Deep Work</span>
           </div>
           <div className="perk-item">
             <Download size={16} className="perk-icon" />
-            <span>.ics Google & Apple Calendar Sync</span>
+            <span>Calendar Sync (.ics)</span>
           </div>
         </div>
       </section>
@@ -183,11 +182,9 @@ export default function LandingPage({ currentUser }) {
       {/* How it Works Workflow Section */}
       <section id="how-it-works" className="landing-section how-it-works-section">
         <div className="section-head text-center">
-          <div className="section-kicker">STREAMLINED 4-STEP WORKFLOW</div>
-          <h2>How Daymark Works</h2>
-          <p>
-            Go from a messy syllabus and upcoming exam dates to an adaptive, balanced daily study schedule in four simple steps.
-          </p>
+          <div className="section-kicker">WORKFLOW</div>
+          <h2>How It Works</h2>
+          <p>From syllabus to an adaptive study timetable in four simple steps.</p>
         </div>
 
         <div className="steps-cards-grid">
@@ -198,11 +195,9 @@ export default function LandingPage({ currentUser }) {
                 <BookOpen size={20} />
               </div>
             </div>
-            <h3>Define Goals & Syllabus</h3>
-            <p>
-              Paste raw syllabus topics or type your targets in natural language. Our AI extracts topics, difficulty levels, and deadlines automatically.
-            </p>
-            <div className="step-tag">AI Goal Extraction</div>
+            <h3>Define Syllabus</h3>
+            <p>Paste syllabus topics or type your goals. AI extracts subjects, difficulty, and deadlines.</p>
+            <div className="step-tag">AI Extraction</div>
           </div>
 
           <div className="step-card">
@@ -212,10 +207,8 @@ export default function LandingPage({ currentUser }) {
                 <Clock size={20} />
               </div>
             </div>
-            <h3>Set Study Availability</h3>
-            <p>
-              Select your realistic study windows across Monday–Sunday. Choose presets like "Evenings Only" or "Balanced" so you never get overwhelmed.
-            </p>
+            <h3>Set Availability</h3>
+            <p>Choose when you can study each day with flexible time windows and quick presets.</p>
             <div className="step-tag">Custom Windows</div>
           </div>
 
@@ -226,10 +219,8 @@ export default function LandingPage({ currentUser }) {
                 <Calendar size={20} />
               </div>
             </div>
-            <h3>Generate Adaptive Plan</h3>
-            <p>
-              The greedy heuristic scheduler builds your timetable, inserting scientifically spaced revision sessions (Days 1, 3, 7, and 14) for 90%+ retention.
-            </p>
+            <h3>Generate Plan</h3>
+            <p>Engine schedules study slots with automated spaced reviews (Days 1, 3, 7, 14).</p>
             <div className="step-tag">Spaced Repetition</div>
           </div>
 
@@ -240,11 +231,9 @@ export default function LandingPage({ currentUser }) {
                 <RefreshCw size={20} />
               </div>
             </div>
-            <h3>Focus & 1-Click Re-plan</h3>
-            <p>
-              Track focus blocks with the built-in Pomodoro timer. If unexpected events arise or you miss a day, click "Auto Re-plan" to rebalance instantly.
-            </p>
-            <div className="step-tag">Zero-Guilt Recovery</div>
+            <h3>Focus & Adapt</h3>
+            <p>Study with Pomodoro focus. Miss a day? Click "Auto Re-plan" to rebalance instantly.</p>
+            <div className="step-tag">Auto Recovery</div>
           </div>
         </div>
       </section>
@@ -253,32 +242,31 @@ export default function LandingPage({ currentUser }) {
       <section id="spaced-repetition" className="landing-section">
         <div className="section-head text-center">
           <div className="section-kicker">SCIENCE-BACKED RETENTION</div>
-          <h2>Why Spaced Repetition Beats Cramming Every Time</h2>
+          <h2>Spaced Repetition</h2>
           <p>
-            Without reinforcement, humans forget up to 75% of new material within 48 hours.
-            Daymark schedules automatic micro-revision slots at 1, 3, 7, and 14 days so memories lock into long-term recall.
+            Strategic reviews at 1, 3, 7, and 14 days lock concepts into long-term recall.
           </p>
         </div>
         <div className="repetition-cards-grid">
           <div className="rep-card">
             <div className="rep-day">Day 1</div>
-            <h4>Initial Focus</h4>
-            <p>Deep work study slot to grasp core concepts and solve fundamental practice problems.</p>
+            <h4>Initial Study</h4>
+            <p>Core deep-work session to learn new concepts and fundamentals.</p>
           </div>
           <div className="rep-card highlight">
             <div className="rep-day">Day 2 (+24h)</div>
-            <h4>First Flash Recap</h4>
-            <p>15–30 min quick review to interrupt the initial steep drop in the forgetting curve.</p>
+            <h4>Quick Recap</h4>
+            <p>15-minute review to interrupt early memory decay.</p>
           </div>
           <div className="rep-card">
             <div className="rep-day">Day 4 (+3d)</div>
             <h4>Active Recall</h4>
-            <p>Targeted problem sets testing comprehension and edge cases without notes.</p>
+            <p>Targeted practice problems without looking at notes.</p>
           </div>
           <div className="rep-card">
             <div className="rep-day">Day 11 (+7d)</div>
-            <h4>Permanent Storage</h4>
-            <p>High-level synthesis ensuring zero memory degradation heading into exam week.</p>
+            <h4>Long-Term Mastery</h4>
+            <p>High-level synthesis to solidify retention before exams.</p>
           </div>
         </div>
       </section>
@@ -287,11 +275,10 @@ export default function LandingPage({ currentUser }) {
       <section id="sample-schedule" className="landing-section sample-section">
         <div className="sample-inner">
           <div className="sample-intro">
-            <div className="section-kicker">TRY THE INTERACTIVE PREVIEW</div>
-            <h2>Interactive Schedule Demo</h2>
+            <div className="section-kicker">INTERACTIVE DEMO</div>
+            <h2>Schedule Preview</h2>
             <p>
-              Click any day of the week, check off study sessions, and see how Daymark
-              balances intense study slots with automated spaced reviews.
+              Select any day to preview how study slots and spaced reviews balance out.
             </p>
             <div className="sample-legend">
               <span className="legend-item"><i className="legend-dot study" /> Study Slot</span>
@@ -363,16 +350,16 @@ export default function LandingPage({ currentUser }) {
                 <div className="sample-rest-state">
                   <Sparkles size={20} className="rest-icon" />
                   <div>
-                    <b>Scheduled Rest Day</b>
-                    <small>Recovery and rest are essential parts of sustainable study.</small>
+                    <b>Rest Day</b>
+                    <small>Recovery time for sustainable progress.</small>
                   </div>
                 </div>
               )}
             </div>
 
             <div className="sample-board-footer">
-              <span>💡 Tap any session above to toggle completion</span>
-              <span>Interactive preview only</span>
+              <span>💡 Tap any session to toggle completion</span>
+              <span>Interactive preview</span>
             </div>
           </div>
         </div>
@@ -381,25 +368,25 @@ export default function LandingPage({ currentUser }) {
       {/* Features Grid */}
       <section id="features" className="landing-section">
         <div className="section-head text-center">
-          <div className="section-kicker">ENGINEERED FOR EXCELLENCE</div>
-          <h2>Everything You Need to Ace Your Deadlines</h2>
-          <p>Built with modern heuristics, constraint satisfaction algorithms, and Google Gemini LLM.</p>
+          <div className="section-kicker">CORE FEATURES</div>
+          <h2>Built for Maximum Retention</h2>
+          <p>Constraint scheduling and Gemini AI tailored to your study windows.</p>
         </div>
         <div className="features-grid">
           <div className="feature-card">
             <div className="feature-card-icon">
               <Sparkles size={22} />
             </div>
-            <h3>Free-Text AI Goal Extraction</h3>
-            <p>Paste your natural language goals or syllabus notes. Daymark automatically detects subjects, exam dates, difficulty, and confidence ratings.</p>
+            <h3>AI Goal Extraction</h3>
+            <p>Paste raw syllabus notes. AI auto-detects subjects, exam dates, and difficulty.</p>
           </div>
 
           <div className="feature-card">
             <div className="feature-card-icon">
               <Clock size={22} />
             </div>
-            <h3>Intelligent Constraint Scheduler</h3>
-            <p>Greedy priority scheduler places sessions only during your chosen availability windows, respecting exam deadlines and weightages.</p>
+            <h3>Constraint Scheduler</h3>
+            <p>Schedules sessions strictly within your chosen hours and exam deadlines.</p>
           </div>
 
           <div className="feature-card">
@@ -407,31 +394,31 @@ export default function LandingPage({ currentUser }) {
               <RefreshCw size={22} />
             </div>
             <h3>1-Click Adaptive Re-planning</h3>
-            <p>Life happens. If you fall sick or miss a session, one click redistributes incomplete topics into future available slots without breaking your exam readiness.</p>
+            <p>Missed a day? Redistribute incomplete topics into upcoming open slots with one tap.</p>
           </div>
 
           <div className="feature-card">
             <div className="feature-card-icon">
               <TrendingUp size={22} />
             </div>
-            <h3>Workload Feasibility Validator</h3>
-            <p>Detects workload overload before you start and gives actionable trade-off suggestions so you never schedule an impossible 18-hour study cram.</p>
+            <h3>Feasibility Validator</h3>
+            <p>Detects workload overload early and suggests realistic daily adjustments.</p>
           </div>
 
           <div className="feature-card">
             <div className="feature-card-icon">
               <Timer size={22} />
             </div>
-            <h3>Integrated Pomodoro Timer</h3>
-            <p>Launch focused 25m or 50m deep work sessions with sound cues directly from your today dashboard, logging study minutes right to your profile.</p>
+            <h3>Pomodoro Focus Timer</h3>
+            <p>Built-in 25m/50m focus sessions with automatic study-time tracking.</p>
           </div>
 
           <div className="feature-card">
             <div className="feature-card-icon">
               <Download size={22} />
             </div>
-            <h3>Calendar Export (.ics)</h3>
-            <p>Sync your personalized study timetable with Google Calendar, Apple Calendar, or Microsoft Outlook with a single click.</p>
+            <h3>Calendar Sync (.ics)</h3>
+            <p>One-click export to Google Calendar, Apple Calendar, or Outlook.</p>
           </div>
         </div>
       </section>
@@ -439,47 +426,47 @@ export default function LandingPage({ currentUser }) {
       {/* FAQ */}
       <section id="faq" className="landing-section faq-section">
         <div className="section-head text-center">
-          <div className="section-kicker">FREQUENTLY ASKED QUESTIONS</div>
-          <h2>Got Questions? We’ve Got Answers.</h2>
+          <div className="section-kicker">FAQ</div>
+          <h2>Frequently Asked Questions</h2>
         </div>
         <div className="faq-container">
           <details className="faq-item">
             <summary>
-              <span>Can I customize my study days and daily hours?</span>
+              <span>Can I customize my study days and hours?</span>
               <ChevronDown size={18} />
             </summary>
             <p>
-              Yes! Under Weekly Availability, you can select which days of the week you study and define custom start and end times (e.g. 18:00 to 21:00 on weekdays, 10:00 to 16:00 on weekends). The scheduler never books outside your windows.
+              Yes. Set your study days and daily time windows under Weekly Availability. Sessions will only be scheduled inside those hours.
             </p>
           </details>
 
           <details className="faq-item">
             <summary>
-              <span>What happens if I miss a scheduled study session?</span>
+              <span>What happens if I miss a study session?</span>
               <ChevronDown size={18} />
             </summary>
             <p>
-              Just click "Missed" on the session card. Then click "Re-plan Missed Work". Daymark's engine identifies the missed topic and fits it into your next available open slot before the exam.
+              Mark it as missed, then click Re-plan. The engine redistributes the topic into your next open slot before the exam.
             </p>
           </details>
 
           <details className="faq-item">
             <summary>
-              <span>How does the AI understand free-text exam goals?</span>
+              <span>How does AI syllabus extraction work?</span>
               <ChevronDown size={18} />
             </summary>
             <p>
-              Daymark uses Google Gemini API to parse natural language like "Physics exam on Nov 15, weak in optics; Calculus exam on Nov 25" into structured subjects, estimated effort hours, and confidence ratings.
+              Gemini AI parses plain-text notes or exam dates into structured subjects, topics, and estimated hours.
             </p>
           </details>
 
           <details className="faq-item">
             <summary>
-              <span>Can I export my study plan to my calendar?</span>
+              <span>Can I export my plan to an external calendar?</span>
               <ChevronDown size={18} />
             </summary>
             <p>
-              Yes! Click "Export .ics" anytime to download a standard iCalendar file that imports seamlessly into Google Calendar, Apple Calendar, or Outlook.
+              Yes. Download a standard .ics file anytime to sync with Google Calendar, Apple Calendar, or Outlook.
             </p>
           </details>
         </div>
@@ -489,7 +476,7 @@ export default function LandingPage({ currentUser }) {
       <footer className="landing-footer">
         <div className="landing-footer-inner">
           <Brand size="normal" />
-          <p>© 2026 Daymark AI. Built for students who value their time and mental clarity.</p>
+          <p>© 2026 Daymark AI. Intelligent study scheduling.</p>
           <div className="footer-links">
             <Link to="/workspace/overview">Launch App</Link>
             <a href="http://127.0.0.1:8000/docs" target="_blank" rel="noreferrer">

@@ -66,8 +66,8 @@ export default function OverviewPage({
           </h1>
           <p>
             {profile?.goal
-              ? `Working towards: ${profile.goal} · Keep your momentum steady today.`
-              : "A little focused effort today makes tomorrow feel so much lighter."}
+              ? `Goal: ${profile.goal}`
+              : "Track daily progress and upcoming targets."}
           </p>
         </div>
         <div className="heading-actions">
@@ -116,7 +116,7 @@ export default function OverviewPage({
             <i style={{ width: `${completionRate}%` }} />
           </div>
           <div className="track-foot">
-            <span>Progress: {completedCount} of {sessions.length} sessions completed</span>
+            <span>{completedCount} of {sessions.length} sessions completed</span>
             <b>{completionRate}% Done</b>
           </div>
         </section>
@@ -138,8 +138,8 @@ export default function OverviewPage({
           <b>{nextExam?.name || "No upcoming exam set"}</b>
           <p>
             {nextExam
-              ? `${daysToExam} days remaining to prepare (${nextExam.topics?.length || 0} topics)`
-              : "Add your subjects and exam dates under Goals & Subjects."}
+              ? `${daysToExam} days left · ${nextExam.topics?.length || 0} topics`
+              : "Add subjects and exam dates in Goals & Subjects."}
           </p>
 
           <div className="deadline-panel-footer">
@@ -161,11 +161,8 @@ export default function OverviewPage({
             <Sparkles size={18} />
           </div>
           <div className="spaced-rep-text">
-            <b>Spaced Repetition Active: {revisionSessions.length} automated review slots scheduled</b>
-            <p>
-              Topics are automatically revisited at 1, 3, 7, and 14 days after initial study to prevent
-              the forgetting curve.
-            </p>
+            <b>Spaced Repetition Active · {revisionSessions.length} review slots</b>
+            <p>Automated reviews scheduled at 1, 3, 7, and 14-day intervals.</p>
           </div>
           <button
             className="button button-outline button-small"
@@ -234,8 +231,8 @@ export default function OverviewPage({
           <b>No pending sessions scheduled</b>
           <p>
             {sessions.length > 0
-              ? "All your scheduled sessions are complete! Outstanding job."
-              : "Add your subjects and click Generate Schedule to build your roadmap."}
+              ? "All scheduled sessions are complete."
+              : "Add subjects and generate your schedule to get started."}
           </p>
           <button
             className="button button-primary button-small"

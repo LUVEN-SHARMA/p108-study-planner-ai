@@ -64,11 +64,11 @@ export default function LoginPage({ onLoginSuccess }) {
         </div>
 
         <div className="login-intro">
-          <h2>{isSignUp ? "Create Student Account" : "Sign in to Daymark"}</h2>
+          <h2>{isSignUp ? "Create Account" : "Sign in to Daymark"}</h2>
           <p>
             {isSignUp
-              ? "Start generating adaptive spaced repetition schedules tailored to your goals."
-              : "Enter your credentials to access your study planner and schedule."}
+              ? "Create an account to start your study plan."
+              : "Enter your email and password to continue."}
           </p>
         </div>
 

@@ -95,7 +95,7 @@ export default function PlanPage({
         <div>
           <div className="section-kicker">ADAPTIVE TIMETABLE & SCHEDULER</div>
           <h1>Study Plan & Calendar</h1>
-          <p>A structured day-by-day roadmap with automated spaced revision and deadline guarantees.</p>
+          <p>Calendar roadmap with automated spaced revision.</p>
         </div>
         <div className="heading-actions">
           <a
@@ -114,8 +114,8 @@ export default function PlanPage({
       <section className="panel prompt-builder-panel">
         <div className="panel-header">
           <div>
-            <span className="panel-kicker">AI-POWERED SCHEDULE BUILDER</span>
-            <h2>Customize Timing & Subject Priorities</h2>
+            <span className="panel-kicker">AI SCHEDULER</span>
+            <h2>Schedule Generator</h2>
           </div>
           <div className="soft-icon">
             <Sparkles size={20} />
@@ -123,7 +123,7 @@ export default function PlanPage({
         </div>
 
         <p className="panel-subtitle">
-          Enter natural language constraints like study hours, preferred timing, or subjects to prioritize.
+          Optional constraints for daily hours, timing, or subject priorities.
         </p>
 
         <div className="prompt-controls-grid">
@@ -211,14 +211,14 @@ export default function PlanPage({
             <div className="feasibility-content">
               <b>
                 {planDetails.feasibility.is_feasible
-                  ? "Schedule is Feasible & Realistic!"
+                  ? "Schedule is Feasible"
                   : "Workload Overload Detected"}
               </b>
               <p>
-                Estimated Workload: {planDetails.feasibility.total_required_hours}h required ·{" "}
-                {planDetails.feasibility.total_available_hours}h available in your weekly study windows.
+                {planDetails.feasibility.total_required_hours}h required ·{" "}
+                {planDetails.feasibility.total_available_hours}h available
                 {!planDetails.feasibility.is_feasible &&
-                  ` (Shortfall of ${planDetails.feasibility.shortfall_hours} hours)`}
+                  ` (${planDetails.feasibility.shortfall_hours}h shortfall)`}
               </p>
               {!planDetails.feasibility.is_feasible &&
                 planDetails.feasibility.suggestions?.map((sug, i) => (

@@ -321,7 +321,7 @@ function WorkspaceShell({ profile, onUpdateProfile, onLogout }) {
               <span className="streak-flame">🔥</span>
               <div className="streak-info">
                 <b>3-Day Focus Streak</b>
-                <small>Consistency builds recall</small>
+                <small>Keep it going</small>
               </div>
             </div>
           )}

@@ -123,23 +123,20 @@ export default function AvailabilityPage({
         <div>
           <div className="section-kicker">STUDY ROUTINE & CAPACITY</div>
           <h1>Weekly Study Windows</h1>
-          <p>
-            Define the exact hours you are free to study each day. The scheduler guarantees sessions
-            only fit inside your defined windows.
-          </p>
+          <p>Set available study hours for each day of the week.</p>
         </div>
       </div>
 
       {/* Preset Banner */}
       <div className="preset-quick-bar">
-        <span className="preset-label">Schedule Presets:</span>
+        <span className="preset-label">Presets:</span>
         <button
           type="button"
           className="button button-outline button-small"
           onClick={() => applyPreset("evenings")}
         >
           <Moon size={14} />
-          <span>Every Evening (18:00 – 21:00)</span>
+          <span>Evenings (18:00–21:00)</span>
         </button>
         <button
           type="button"
@@ -147,7 +144,7 @@ export default function AvailabilityPage({
           onClick={() => applyPreset("fulltime")}
         >
           <Sun size={14} />
-          <span>Weekdays Full-Time (09:00 – 17:00)</span>
+          <span>Weekdays (09:00–17:00)</span>
         </button>
         <button
           type="button"
@@ -155,7 +152,7 @@ export default function AvailabilityPage({
           onClick={() => applyPreset("balanced")}
         >
           <Sparkles size={14} />
-          <span>Balanced Week (Evenings + Sat)</span>
+          <span>Balanced (Evenings + Sat)</span>
         </button>
         <button
           type="button"
@@ -163,7 +160,7 @@ export default function AvailabilityPage({
           onClick={() => applyPreset("weekends")}
         >
           <Calendar size={14} />
-          <span>Weekend Heavy (Sat & Sun)</span>
+          <span>Weekends Only</span>
         </button>
       </div>
 

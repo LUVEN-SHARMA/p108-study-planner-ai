@@ -66,7 +66,7 @@ export default function TodayPage({
             }).format(new Date(`${selectedDate}T12:00:00`))}
           </div>
           <h1>{isToday ? "Today in Focus" : "Daily Agenda"}</h1>
-          <p>Complete your scheduled sessions, check off tasks, and lock in your study hours.</p>
+          <p>Sessions and personal action items for today.</p>
         </div>
         <div className="heading-actions">
           <div className="date-picker-wrap">
@@ -96,9 +96,9 @@ export default function TodayPage({
             <ListChecks size={22} />
           </div>
           <div>
-            <b>{daySessions.length + dayTasks.length} Scheduled Items for this day</b>
+            <b>{daySessions.length + dayTasks.length} Scheduled Items</b>
             <p>
-              {completedSessions} of {daySessions.length} study sessions finished · {completedTasks} of {dayTasks.length} tasks checked off
+              {completedSessions}/{daySessions.length} sessions · {completedTasks}/{dayTasks.length} tasks completed
             </p>
           </div>
         </div>
@@ -117,8 +117,8 @@ export default function TodayPage({
       <section className="panel task-composer-panel">
         <div className="panel-header">
           <div>
-            <span className="panel-kicker">QUICK TASK / TO-DO</span>
-            <h2>Add Personal Task or Reading Goal</h2>
+            <span className="panel-kicker">PERSONAL TO-DOS</span>
+            <h2>Add Task</h2>
           </div>
           <div className="soft-icon amber">
             <Plus size={18} />
@@ -250,8 +250,8 @@ export default function TodayPage({
       ) : (
         <div className="empty-state">
           <CheckCircle2 size={22} className="empty-state-icon" />
-          <b>No custom tasks added for this day</b>
-          <p>Use the form above to add lecture reviews, flashcard sessions, or problem sets.</p>
+          <b>No tasks added for this day</b>
+          <p>Use the form above to add personal to-dos or reading goals.</p>
         </div>
       )}
 
