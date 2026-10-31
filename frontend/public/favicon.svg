@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="dm-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="dm-star" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e0e7ff" />
+    </linearGradient>
+    <filter id="dm-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="0.8" flood-color="#1e1b4b" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  <!-- Background Icon Squircle -->
+  <rect width="32" height="32" rx="7.5" fill="url(#dm-grad)" />
+  <rect x="0.75" y="0.75" width="30.5" height="30.5" rx="6.75" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.25" />
+
+  <!-- Main AI Sparkle Star -->
+  <path d="M16 6 C16 11.2 11.2 16 6 16 C11.2 16 16 20.8 16 26 C16 20.8 20.8 16 26 16 C20.8 16 16 11.2 16 6 Z"
+        fill="url(#dm-star)"
+        filter="url(#dm-shadow)" />
+
+  <!-- Micro Orbit Focus Dot -->
+  <circle cx="23.5" cy="8.5" r="1.8" fill="#38bdf8" />
+</svg>
