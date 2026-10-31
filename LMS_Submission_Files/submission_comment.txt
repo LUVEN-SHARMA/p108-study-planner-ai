@@ -1,0 +1,18 @@
+Project Title: Agentic AI Task Planner with Tool Use
+Student Name: Luven Sharma
+Domain: LLM / Python (HCLTech Career Shaper Project 77)
+GitHub Repository: https://github.com/LUVEN-SHARMA/p108-study-planner-ai.git
+
+Submitted Deliverables:
+1. Agentic AI Task Planner Project Report (10 Pages, Complete Documentation)
+2. Exploratory Data Analysis (EDA) Report with 5 Visualizations
+3. Cleaned & Pre-processed Agent Execution Dataset (5,000 rows with 3.9% Anomaly Rate)
+4. Comprehensive Data Dictionary (data_dictionary.csv)
+5. Signed Ethical Compliance Declaration (Human-in-the-Loop & Tool Safety Guardrails)
+
+Tech Stack & Architecture:
+- Frontend: React.js (Vite + Tailwind CSS + Interactive Study Planner UI)
+- Backend: FastAPI (Python 3.11) with Asynchronous Task Execution & RESTful Endpoints
+- Agent & Tool Core: LangChain / LangGraph ReAct Planning Loop with 6 Autonomous Tools (web_search, code_exec, api_call, email_draft, calc, file_read)
+- Safety & HITL: Dual-Gate Human Confirmation for Irreversible Actions + Tamper-Evident Audit Logging
+- Persistence & Concurrency: SQLite WAL Mode (Write-Ahead Logging) + Vector DB Storage

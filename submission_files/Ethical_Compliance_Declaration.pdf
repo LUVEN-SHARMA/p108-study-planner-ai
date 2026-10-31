@@ -1,0 +1,165 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> /F2 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> /F3 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >> /F4 << /Type /Font /Subtype /Type1 /BaseFont /Courier >> >> >>
+endobj
+4 0 obj
+<< /Length 5229 >>
+stream
+q 0.1 0.22 0.45 RG 1.5 w 35 35 525 770 re S Q
+q 0.98 0.94 0.90 rg 38 725 519 75 re f Q
+q 0.85 0.50 0.10 rg 38 725 6 75 re f Q
+BT /F2 13.5 Tf 0.7 0.3 0.05 rg 55 770 Td (HCLTech Career Shaper Programme) Tj ET
+BT /F1 10.0 Tf 0.25 0.35 0.50 rg 55 752 Td (Academic Year 2025-26 | III Year Industry Project) Tj ET
+BT /F2 9.0 Tf 0.1 0.2 0.4 rg 55 736 Td (ETHICAL COMPLIANCE & RESPONSIBLE AI USE DECLARATION) Tj ET
+BT /F2 22 Tf 0.08 0.18 0.36 rg
+50 636 Td (Ethical Compliance Declaration) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 597 Td (Mandatory Student Declaration for Agentic AI Task Planner with Tool Use) Tj ET
+q 0.99 0.96 0.90 rg 50 505 495.28 76 re f Q
+q 0.85 0.55 0.15 RG 1.5 w 50 505 495.28 76 re S Q
+q 0.85 0.55 0.15 rg 50 505 4 76 re f Q
+BT /F2 9.5 Tf 0.70 0.35 0.05 rg 62 565 Td (OFFICIAL HCLTECH PROGRAMME ETHICAL MANDATE) Tj ET
+BT /F1 8.5 Tf 0.2 0.2 0.2 rg 62 551 Td (Agentic AI with tool access can cause irreversible actions. Implement human) Tj ET
+BT /F1 8.5 Tf 0.2 0.2 0.2 rg 62 539 Td (confirmation before file write/email send actions. Log all tool calls. Ensure) Tj ET
+BT /F1 8.5 Tf 0.2 0.2 0.2 rg 62 527 Td (execution runtime sandboxing and full operational accountability.) Tj ET
+q 0.1 0.25 0.55 rg
+50 469 4 16 re f Q
+BT /F2 13.5 Tf 0.1 0.22 0.45 rg
+60 471 Td (1. Candidate & Project Particulars) Tj ET
+q 0.15 0.28 0.50 rg 50 433 495 18 re f Q
+BT /F2 8.5 Tf 1 1 1 rg 55 438 Td (Field) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 195 438 Td (Particulars) Tj ET
+q 1.0 1.0 1.0 rg 50 415 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 415 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 420 Td (Project Title) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 195 420 Td (Agentic AI Task Planner with Too...) Tj ET
+q 0.96 0.97 0.99 rg 50 397 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 397 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 402 Td (Project Number) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 195 402 Td (Project No. 77) Tj ET
+q 1.0 1.0 1.0 rg 50 379 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 379 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 384 Td (Domain & Track) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 195 384 Td (LLM / Python \(Advanced Track\)) Tj ET
+q 0.96 0.97 0.99 rg 50 361 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 361 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 366 Td (Learner / Candidate Name) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 195 366 Td ([Learner to Fill Name]) Tj ET
+q 1.0 1.0 1.0 rg 50 343 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 343 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 348 Td (Student Roll Number / Enrolment) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 195 348 Td ([Learner to Fill Roll No]) Tj ET
+q 0.96 0.97 0.99 rg 50 325 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 325 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 330 Td (Academic Year & Semester) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 195 330 Td (2025-26 | VI / VII Semester \(II...) Tj ET
+q 1.0 1.0 1.0 rg 50 307 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 307 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 312 Td (Programme Mentor / Faculty) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 195 312 Td (Shaily Gaur \(gaur-shaily@hcltec...) Tj ET
+q 0.96 0.97 0.99 rg 50 289 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 289 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 294 Td (Submission Checkpoint) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 195 294 Td (Week 4 Final Deliverables Submis...) Tj ET
+q 0.1 0.25 0.55 rg
+50 253 4 16 re f Q
+BT /F2 13.5 Tf 0.1 0.22 0.45 rg
+60 255 Td (2. Formal Compliance Declarations) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 228.304 Td (I hereby solemnly declare and affirm that the Agentic AI Task Planner with Tool Use project adheres to) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 215.608 Td (the following rigorous ethical guidelines:) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 197.458 Td (? Human-in-the-Loop \(HITL\) Gate for Irreversible Actions: All tools classified as state-modifying) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 185.308 Td (\(specifically email_draft, file modifications, and non-idempotent api_call operations\) are gated by) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 173.158 Td (mandatory human confirmation. The system halts execution and requires explicit human operator consent) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 161.00799999999998 Td (before dispatching.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 144.85799999999998 Td (? 100% Comprehensive Tool Call Logging: Every tool invocation is permanently recorded in a structured,) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 132.70799999999997 Td (immutable audit log containing task_id, step index, timestamp, tool name, input arguments hash, human) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 120.55799999999996 Td (approval status, latency, and return status code.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 104.40799999999996 Td (? Sandboxed & Isolated Runtime Execution: The code_exec capability is strictly confined to an isolated) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 92.25799999999995 Td (execution sandbox preventing unauthorized host filesystem access, privilege escalation, or arbitrary) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 80.10799999999995 Td (external network connections.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 63.95799999999995 Td (? Data Privacy & Security Safeguards: No proprietary, sensitive, or personal data is transmitted to) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources 3 0 R /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 2208 >>
+stream
+q 0.7 0.7 0.7 RG 0.5 w
+50 801.89 m 545.28 801.89 l S
+50 42 m 545.28 42 l S
+Q
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 807.89 Td (HCLTech Career Shaper Programme | Project 77: Agentic AI Task Planner with Tool Use) Tj ET
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 30 Td (Academic Year 2025-26 | Individual Project Deliverable) Tj ET
+BT /F2 8 Tf 0.2 0.3 0.6 rg
+500.28 30 Td (Page 2) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 775.74 Td (unauthorized third-party endpoints. All synthetic traces and evaluation logs comply with academic and) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 763.59 Td (industry data protection norms.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 747.44 Td (? Academic Authenticity & Originality: The implementation code, evaluation notebook, datasets, and) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 735.2900000000001 Td (project documentation represent my own individual intellectual output adhering to HCLTech's code of) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 723.1400000000001 Td (academic integrity.) Tj ET
+q 0.1 0.25 0.55 rg
+50 693.1400000000001 4 16 re f Q
+BT /F2 13.5 Tf 0.1 0.22 0.45 rg
+60 695.1400000000001 Td (3. Signatures & Affirmation) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 668.4440000000001 Td (By signing below, I confirm that the project complies in full with the ethical, safety, and operational) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 655.748 Td (standards mandated by HCLTech and the Career Shaper Programme.) Tj ET
+q 0.98 0.98 0.99 rg 50 120 495 105 re f Q
+q 0.8 0.8 0.8 RG 1 w 50 120 495 105 re S Q
+BT /F2 8.5 Tf 0.2 0.2 0.2 rg 65 205 Td (Learner / Candidate Signature:) Tj ET
+BT /F1 8.5 Tf 0.4 0.4 0.4 rg 65 185 Td (Signature: ______________________________________) Tj ET
+BT /F1 8.5 Tf 0.4 0.4 0.4 rg 65 165 Td (Name: [Learner Name]      Date: ______________) Tj ET
+BT /F1 8.5 Tf 0.4 0.4 0.4 rg 65 145 Td (Roll No: [Learner Roll No]   Place: ______________) Tj ET
+BT /F2 8.5 Tf 0.2 0.2 0.2 rg 320 205 Td (Mentor / Faculty Endorsement:) Tj ET
+BT /F1 8.5 Tf 0.4 0.4 0.4 rg 320 185 Td (Signature: ____________________________) Tj ET
+BT /F1 8.5 Tf 0.4 0.4 0.4 rg 320 165 Td (Mentor Name: Shaily Gaur / Coordinator) Tj ET
+BT /F1 8.5 Tf 0.4 0.4 0.4 rg 320 145 Td (Status: Approved & Validated) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources 3 0 R /Contents 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000401 00000 n 
+0000005682 00000 n 
+0000005792 00000 n 
+0000008052 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+8162
+%%EOF

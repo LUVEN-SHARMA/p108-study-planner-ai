@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HCLTech Ethical Compliance Declaration - Project 77</title>
+<style>
+body { font-family: 'Calibri', Arial, sans-serif; line-height: 1.5; color: #222; margin: 35px; }
+h1 { color: #0f2b5c; border-bottom: 2px solid #0f2b5c; padding-bottom: 4px; font-size: 18pt; text-align: center; }
+h2 { color: #1e4287; margin-top: 15px; font-size: 13pt; }
+p { font-size: 11pt; margin-bottom: 10px; }
+table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 10pt; }
+th, td { border: 1px solid #ccd; padding: 7px 9px; text-align: left; }
+th { background-color: #0f2b5c; color: white; }
+.warning { background-color: #fff8e6; border-left: 5px solid #d97706; padding: 12px; margin: 15px 0; }
+.sig-box { border: 1px solid #99a; background-color: #f8fafc; padding: 15px; margin-top: 25px; }
+</style>
+</head>
+<body>
+<h1>HCLTech Career Shaper Programme</h1>
+<p style="text-align: center; font-weight: bold; color: #4b5563;">Academic Year 2025-26 | III Year Industry Project | Project No. 77<br>
+<strong>ETHICAL COMPLIANCE & RESPONSIBLE AI USE DECLARATION</strong></p>
+
+<div class="warning">
+    <strong>ETHICAL NOTE (PROGRAMME MANDATE):</strong><br>
+    Agentic AI with tool access can cause irreversible actions. Implement human confirmation before file write/email send actions. Log all tool calls. Ensure execution runtime sandboxing and full operational accountability.
+</div>
+
+<h2>1. Project & Candidate Particulars</h2>
+<table>
+    <tr><th style="width: 30%;">Field</th><th>Details</th></tr>
+    <tr><td><strong>Project Title</strong></td><td>Agentic AI Task Planner with Tool Use</td></tr>
+    <tr><td><strong>Project Number</strong></td><td>Project No. 77</td></tr>
+    <tr><td><strong>Domain</strong></td><td>LLM / Python (Advanced Level)</td></tr>
+    <tr><td><strong>Learner / Student Name</strong></td><td>[Learner to fill in Name]</td></tr>
+    <tr><td><strong>Roll Number / ID</strong></td><td>[Learner to fill in Roll No]</td></tr>
+    <tr><td><strong>Programme & Semester</strong></td><td>B.Tech Computer Science & Engineering | III Year</td></tr>
+    <tr><td><strong>Programme Mentor</strong></td><td>Shaily Gaur (gaur-shaily@hcltech.com) & Programme Coordinator</td></tr>
+    <tr><td><strong>Submission Due</strong></td><td>Week 4 Final Deliverable (LMS Portal)</td></tr>
+</table>
+
+<h2>2. Formal Compliance Undertakings</h2>
+<p>I hereby affirm and declare that the <em>Agentic AI Task Planner with Tool Use</em> solution complies in full with the ethical, safety, and operational standards mandated by HCLTech Career Shaper Programme:</p>
+<ol>
+    <li><strong>Human-in-the-Loop (HITL) Gate for Irreversible Actions:</strong> All tools classified as state-modifying (specifically <code>email_draft</code>, local file modifications, and stateful <code>api_call</code> operations) are strictly gated by mandatory human confirmation. The system halts execution and requests explicit human approval prior to action execution.</li>
+    <li><strong>100% Comprehensive Tool Call Logging:</strong> Every tool invocation is permanently logged in a structured audit database capturing the task ID, step index, UTC timestamp, tool name, SHA-256 hash of input arguments, human approval status, latency in seconds, tokens used, and return status code.</li>
+    <li><strong>Isolated & Sandboxed Execution:</strong> The <code>code_exec</code> tool is executed within an isolated subprocess environment with strict timeouts, preventing unauthorized filesystem access or privilege escalation.</li>
+    <li><strong>Data Privacy & Security Safeguards:</strong> No private or confidential data is transmitted to unauthorized endpoints.</li>
+    <li><strong>Academic Originality:</strong> All implementation artifacts, datasets, and documentation represent my individual, authentic intellectual contribution.</li>
+</ol>
+
+<div class="sig-box">
+    <table style="border: none;">
+        <tr style="background: none;">
+            <td style="border: none; width: 50%;">
+                <p><strong>Candidate Signature:</strong></p>
+                <p>Signature: __________________________________</p>
+                <p>Name: [Learner Name]</p>
+                <p>Roll No: [Learner Roll No]</p>
+                <p>Date: ____________________  Place: _____________</p>
+            </td>
+            <td style="border: none; width: 50%;">
+                <p><strong>Programme Mentor Endorsement:</strong></p>
+                <p>Signature: __________________________________</p>
+                <p>Name: Shaily Gaur / Coordinator</p>
+                <p>Status: Verified & Approved</p>
+                <p>Date: ____________________</p>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

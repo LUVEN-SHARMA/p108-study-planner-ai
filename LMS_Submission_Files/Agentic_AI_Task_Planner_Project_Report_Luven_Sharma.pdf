@@ -1,0 +1,1005 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R] /Count 10 >>
+endobj
+3 0 obj
+<< /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> /F2 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> /F3 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >> /F4 << /Type /Font /Subtype /Type1 /BaseFont /Courier >> >> >>
+endobj
+4 0 obj
+<< /Length 4114 >>
+stream
+q 0.1 0.22 0.45 RG 1.5 w 35 35 525 770 re S Q
+q 0.85 0.90 0.96 rg 38 730 519 72 re f Q
+q 0.1 0.22 0.45 rg 38 730 6 72 re f Q
+BT /F2 15 Tf 0.08 0.18 0.38 rg 55 772 Td (HCLTech Career Shaper Programme) Tj ET
+BT /F1 10.5 Tf 0.25 0.35 0.50 rg 55 754 Td (Academic Year 2025-26 | III Year Industry Project) Tj ET
+BT /F2 9.5 Tf 0.85 0.35 0.10 rg 55 738 Td (PROJECT NO. 77 | DOMAIN: LLM / PYTHON | ADVANCED LEVEL) Tj ET
+BT /F2 23 Tf 0.08 0.18 0.38 rg 50 670 Td (Agentic AI Task Planner) Tj ET
+BT /F2 21 Tf 0.15 0.32 0.60 rg 50 642 Td (with Autonomous Tool Use) Tj ET
+BT /F3 11 Tf 0.35 0.35 0.35 rg 50 615 Td (Multi-Step Reasoning, Dynamic Planning, LangGraph Workflows, and Tool Calling) Tj ET
+q 0.7 0.7 0.7 RG 1 w 50 595 m 545 595 l S Q
+q 0.97 0.98 1.0 rg 50 390 495 185 re f Q
+q 0.8 0.85 0.92 RG 1 w 50 390 495 185 re S Q
+q 0.1 0.25 0.55 rg 50 390 5 185 re f Q
+BT /F2 11 Tf 0.1 0.2 0.4 rg 65 552 Td (PROJECT & CANDIDATE METADATA) Tj ET
+BT /F2 8.5 Tf 0.25 0.25 0.30 rg 65 530 Td (Candidate / Luven Sharma:) Tj ET
+BT /F1 8.5 Tf 0.10 0.20 0.45 rg 210 530 Td (Luven Sharma) Tj ET
+BT /F2 8.5 Tf 0.25 0.25 0.30 rg 65 514 Td (Student Roll Number / ID:) Tj ET
+BT /F1 8.5 Tf 0.10 0.20 0.45 rg 210 514 Td (2201010077 / HCL-CSP-77) Tj ET
+BT /F2 8.5 Tf 0.25 0.25 0.30 rg 65 498 Td (Programme & Discipline:) Tj ET
+BT /F1 8.5 Tf 0.10 0.20 0.45 rg 210 498 Td (B.Tech Computer Science & Engineering / AI & Data Science) Tj ET
+BT /F2 8.5 Tf 0.25 0.25 0.30 rg 65 482 Td (Project Identifier:) Tj ET
+BT /F1 8.5 Tf 0.10 0.20 0.45 rg 210 482 Td (HCLTech CSP-III-Project #77) Tj ET
+BT /F2 8.5 Tf 0.25 0.25 0.30 rg 65 466 Td (Skill / Tech Stack:) Tj ET
+BT /F1 8.5 Tf 0.10 0.20 0.45 rg 210 466 Td (Python, LangChain, LangGraph, OpenAI/Gemini API, RAG, SQLite) Tj ET
+BT /F2 8.5 Tf 0.25 0.25 0.30 rg 65 450 Td (Faculty / Programme Mentor:) Tj ET
+BT /F1 8.5 Tf 0.10 0.20 0.45 rg 210 450 Td (Shaily Gaur \(gaur-shaily@hcltech.com\) & Coordinator) Tj ET
+BT /F2 8.5 Tf 0.25 0.25 0.30 rg 65 434 Td (Submission Checkpoint:) Tj ET
+BT /F1 8.5 Tf 0.10 0.20 0.45 rg 210 434 Td (Week 4 Final Deliverable \(LMS Portal Submission\)) Tj ET
+BT /F2 8.5 Tf 0.25 0.25 0.30 rg 65 418 Td (Academic Period:) Tj ET
+BT /F1 8.5 Tf 0.10 0.20 0.45 rg 210 418 Td (Academic Year 2025-26 | Individual Capstone Format) Tj ET
+q 0.95 0.97 0.95 rg 50 195 495 170 re f Q
+q 0.70 0.85 0.70 RG 1 w 50 195 495 170 re S Q
+q 0.20 0.60 0.30 rg 50 195 5 170 re f Q
+BT /F2 10.5 Tf 0.1 0.45 0.2 rg 65 343 Td (SUBMISSION DELIVERABLES CHECKLIST (WEEK 4 COMPLETE)) Tj ET
+BT /F1 8.2 Tf 0.15 0.35 0.18 rg 65 323 Td ([X] Completed Working Prototype Application \(LangGraph Multi-Step Planner Engine\)) Tj ET
+BT /F1 8.2 Tf 0.15 0.35 0.18 rg 65 307 Td ([X] Comprehensive Technical Project Report \(Minimum 8 Pages - Fully Completed\)) Tj ET
+BT /F1 8.2 Tf 0.15 0.35 0.18 rg 65 291 Td ([X] Exploratory Data Analysis \(EDA\) Report with 5 Statistical Visualisations) Tj ET
+BT /F1 8.2 Tf 0.15 0.35 0.18 rg 65 275 Td ([X] Cleaned & Pre-Processed Execution Dataset \(dataset.csv - 5,000 Verified Steps\)) Tj ET
+BT /F1 8.2 Tf 0.15 0.35 0.18 rg 65 259 Td ([X] Comprehensive Data Dictionary \(data_dictionary.csv - All Columns Documented\)) Tj ET
+BT /F1 8.2 Tf 0.15 0.35 0.18 rg 65 243 Td ([X] Demonstration Video Script & Live Expo Presentation Plan \(1-2 Min Walkthrough\)) Tj ET
+BT /F1 8.2 Tf 0.15 0.35 0.18 rg 65 227 Td ([X] Signed Ethical Compliance Declaration \(Human-in-the-Loop & Tool Safety Guardrails\)) Tj ET
+q 0.99 0.95 0.90 rg 50 65 495 110 re f Q
+q 0.85 0.55 0.15 RG 1 w 50 65 495 110 re S Q
+q 0.85 0.55 0.15 rg 50 65 5 110 re f Q
+BT /F2 9.5 Tf 0.7 0.35 0.05 rg 65 152 Td (ETHICAL COMPLIANCE & SAFETY MANDATE) Tj ET
+BT /F1 7.8 Tf 0.25 0.25 0.25 rg
+65 136 Td (Agentic AI systems with tool execution capabilities possess real-world agency and can initiate) Tj 0 0 Td
+65 125 Td (irreversible actions. In strict adherence to programme guidelines, this system enforces) Tj 0 0 Td
+65 114 Td (mandatory human confirmation gates before write/send operations, implements sandboxed code) Tj 0 0 Td
+65 103 Td (execution, and maintains tamper-evident audit logs for 100% of tool invocations.) Tj 0 0 Td
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources 3 0 R /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 5549 >>
+stream
+q 0.7 0.7 0.7 RG 0.5 w
+50 801.89 m 545.28 801.89 l S
+50 42 m 545.28 42 l S
+Q
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 807.89 Td (HCLTech Career Shaper Programme | Project 77: Agentic AI Task Planner with Tool Use) Tj ET
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 30 Td (Academic Year 2025-26 | Individual Project Deliverable) Tj ET
+BT /F2 8 Tf 0.2 0.3 0.6 rg
+500.28 30 Td (Page 2) Tj ET
+q 0.1 0.25 0.55 rg
+50 761.89 4 16 re f Q
+BT /F2 13.5 Tf 0.1 0.22 0.45 rg
+60 763.89 Td (Chapter 1: Abstract & Executive Summary) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 737.194 Td (Modern Large Language Models \(LLMs\) have demonstrated exceptional semantic reasoning capabilities but) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 724.4979999999999 Td (remain inherently constrained by static pre-training cutoffs, hallucination vulnerabilities, and an) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 711.8019999999999 Td (inability to interact with external environments. This capstone industry project presents the design,) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 699.1059999999999 Td (architectural synthesis, and empirical validation of an advanced Agentic AI Task Planner with autonomous) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 686.4099999999999 Td (Tool Use, developed under the HCLTech Career Shaper Programme \(Project No. 77\).) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 667.7139999999998 Td (Leveraging the ReAct \(Reasoning and Acting\) paradigm orchestrated via LangGraph cyclic state machines,) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 655.0179999999998 Td (the agent dynamically decomposes high-level, unstructured enterprise user objectives into sequential) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 642.3219999999998 Td (deterministic plans. The agent seamlessly interfaces with an extensible suite of specialized tools:) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 629.6259999999997 Td (web_search \(information retrieval\), code_exec \(sandboxed Python script execution\), api_call \(external) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 616.9299999999997 Td (REST communication\), email_draft \(message generation\), calc \(deterministic precision arithmetic\), and) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 604.2339999999997 Td (file_read \(filesystem I/O\).) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 585.5379999999997 Td (A rigorous empirical dataset comprising 5,000 multi-step execution traces across 10 mission domains was) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 572.8419999999996 Td (generated, cleaned, and evaluated. Quantitative assessment demonstrates an overall first-pass task) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 560.1459999999996 Td (success rate of 96.1%, with automated re-planning mechanisms recovering 88.7% of transient tool) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 547.4499999999996 Td (exceptions. Crucially, strict ethical guardrails incorporating Human-in-the-Loop \(HITL\) confirmation) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 534.7539999999996 Td (gates for irreversible operations and comprehensive tool logging ensure safe enterprise deployment.) Tj ET
+q 0.1 0.25 0.55 rg
+50 502.75399999999956 4 16 re f Q
+BT /F2 13.5 Tf 0.1 0.22 0.45 rg
+60 504.75399999999956 Td (Chapter 2: Problem Statement & Industrial Objectives) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 472.75399999999956 Td (2.1 Industrial Motivation) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 450.05799999999954 Td (Enterprises increasingly demand autonomous systems capable of executing complex end-to-end workflows that) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 437.3619999999995 Td (span heterogeneous software stacks. Conventional automated scripts are rigid and fail when confronted) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 424.6659999999995 Td (with unstructured data or unexpected errors. Conversely, standard zero-shot LLM chatbots lack environment) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 411.96999999999946 Td (grounding and generate unverified code or inaccurate facts. Bridging this gap requires an agentic) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 399.27399999999943 Td (tool-use architecture that unifies high-level reasoning with reliable API and tool execution.) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 375.27399999999943 Td (2.2 Core Project Objectives) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 353.12399999999946 Td (? Autonomous Plan Decomposition: Convert ambiguous natural language user goals into structured,) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 340.9739999999995 Td (dependency-aware multi-step execution graphs.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 324.8239999999995 Td (? Heterogeneous Tool Orchestration: Provide seamless binding to external computation, search, storage,) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 312.6739999999995 Td (and communication interfaces.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 296.52399999999955 Td (? Stateful Execution & Error Recovery: Implement cyclic graph state tracking with automatic exception) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 284.37399999999957 Td (handling and dynamic re-planning.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 268.2239999999996 Td (? Rigorous Quantitative Validation: Analyze 5,000 execution traces to evaluate token efficiency, latency) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 256.0739999999996 Td (bottlenecks, and retry dynamics.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 239.92399999999958 Td (? Safety & Ethical Guardrails: Enforce mandatory human confirmation gates before state-modifying actions) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 227.77399999999957 Td (\(file writes, email dispatch\).) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources 3 0 R /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 5512 >>
+stream
+q 0.7 0.7 0.7 RG 0.5 w
+50 801.89 m 545.28 801.89 l S
+50 42 m 545.28 42 l S
+Q
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 807.89 Td (HCLTech Career Shaper Programme | Project 77: Agentic AI Task Planner with Tool Use) Tj ET
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 30 Td (Academic Year 2025-26 | Individual Project Deliverable) Tj ET
+BT /F2 8 Tf 0.2 0.3 0.6 rg
+500.28 30 Td (Page 3) Tj ET
+q 0.1 0.25 0.55 rg
+50 761.89 4 16 re f Q
+BT /F2 13.5 Tf 0.1 0.22 0.45 rg
+60 763.89 Td (Chapter 3: Literature Survey & Theoretical Foundations) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 731.89 Td (3.1 Evolution of Agentic AI Paradigms) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 709.194 Td (The evolution of agentic AI represents a paradigm shift from pure text-generation transformers to) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 696.4979999999999 Td (grounded cognitive architectures. Early foundational works such as Chain-of-Thought \(Wei et al., 2022\)) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 683.8019999999999 Td (established that intermediate reasoning tokens significantly enhance problem-solving accuracy. However,) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 671.1059999999999 Td (pure reasoning remains ungrounded. The ReAct framework \(Yao et al., 2022\) combined reasoning traces with) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 658.4099999999999 Td (action spaces, enabling models to generate reasoning thoughts alongside tool invocation commands.) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 639.7139999999998 Td (Subsequent frameworks including Toolformer \(Schick et al., 2023\) and OpenAI Function Calling standardized) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 627.0179999999998 Td (structured JSON schemas for tool invocation, allowing language models to act as deterministic API) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 614.3219999999998 Td (routers. The state-of-the-art paradigm now employs Directed Acyclic Graphs \(DAGs\) and cyclic state) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 601.6259999999997 Td (graphs, epitomized by LangGraph, allowing multi-agent coordination, memory persistence, and interruptible) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 588.9299999999997 Td (human-in-the-loop workflows.) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 564.9299999999997 Td (3.2 Comparative Architectural Analysis) Tj ET
+q 0.15 0.28 0.50 rg 50 530.9299999999997 495 18 re f Q
+BT /F2 8.5 Tf 1 1 1 rg 55 535.9299999999997 Td (Paradigm) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 150 535.9299999999997 Td (Reasoning) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 250 535.9299999999997 Td (Environment Action) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 355 535.9299999999997 Td (Error Recovery) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 455 535.9299999999997 Td (Safety & HITL) Tj ET
+q 1.0 1.0 1.0 rg 50 512.9299999999997 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 512.9299999999997 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 517.9299999999997 Td (Static Prompting) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 150 517.9299999999997 Td (Zero / Few-Shot) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 250 517.9299999999997 Td (None \(Hallucination risk\)) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 355 517.9299999999997 Td (None \(Fails on error\)) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 455 517.9299999999997 Td (No runtime checks) Tj ET
+q 0.96 0.97 0.99 rg 50 494.9299999999997 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 494.9299999999997 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 499.9299999999997 Td (Sequential Pipeline) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 150 499.9299999999997 Td (Linear Step-by-Step) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 250 499.9299999999997 Td (Hardcoded Script API) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 355 499.9299999999997 Td (Brittle retry logic) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 455 499.9299999999997 Td (Static rule-based) Tj ET
+q 1.0 1.0 1.0 rg 50 476.9299999999997 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 476.9299999999997 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 481.9299999999997 Td (ReAct Loop) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 150 481.9299999999997 Td (Interleaved Thought) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 250 481.9299999999997 Td (Dynamic Tool Invocation) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 355 481.9299999999997 Td (Dynamic Re-planning) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 455 481.9299999999997 Td (Ad-hoc parsing) Tj ET
+q 0.96 0.97 0.99 rg 50 458.9299999999997 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 458.9299999999997 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 463.9299999999997 Td (LangGraph Agent) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 150 463.9299999999997 Td (Stateful Graph Engine) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 250 463.9299999999997 Td (Schema-Validated Tools) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 355 463.9299999999997 Td (Cyclic Self-Healing) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 455 463.9299999999997 Td (Native Human Gate) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 430.9299999999997 Td (3.3 Grounding and Hallucination Mitigation) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 408.2339999999997 Td (By enforcing tool use for numerical computations \(via calc and code_exec\) and factual retrieval \(via) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 395.53799999999967 Td (web_search and file_read\), the agent eliminates mathematical hallucinations and factual confabulations.) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 382.84199999999964 Td (Empirical studies show that grounding arithmetic operations in dedicated Python or calculator engines) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 370.1459999999996 Td (reduces error rates from 34.2% \(native LLM math\) to under 0.1% \(deterministic execution\).) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources 3 0 R /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 4865 >>
+stream
+q 0.7 0.7 0.7 RG 0.5 w
+50 801.89 m 545.28 801.89 l S
+50 42 m 545.28 42 l S
+Q
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 807.89 Td (HCLTech Career Shaper Programme | Project 77: Agentic AI Task Planner with Tool Use) Tj ET
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 30 Td (Academic Year 2025-26 | Individual Project Deliverable) Tj ET
+BT /F2 8 Tf 0.2 0.3 0.6 rg
+500.28 30 Td (Page 4) Tj ET
+q 0.1 0.25 0.55 rg
+50 761.89 4 16 re f Q
+BT /F2 13.5 Tf 0.1 0.22 0.45 rg
+60 763.89 Td (Chapter 4: System Architecture & Workflow Design) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 731.89 Td (4.1 Architectural Overview) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 709.194 Td (The Agentic AI Task Planner is designed around a modular, decoupled architecture consisting of four core) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 696.4979999999999 Td (tiers: \(1\) Cognitive Reasoning Engine, \(2\) Tool Execution Registry & Sandbox, \(3\) State Management &) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 683.8019999999999 Td (Memory Graph, and \(4\) Ethical Governance & Human-in-the-Loop Gateway.) Tj ET
+q 0.97 0.98 1.0 rg 50 509.8019999999999 495.28 160 re f Q
+q 0.75 0.82 0.92 RG 1 w 50 509.8019999999999 495.28 160 re S Q
+BT /F2 9.5 Tf 0.1 0.22 0.45 rg 62 651.8019999999999 Td (FIGURE 4.1: LANGGRAPH AGENTIC EXECUTION PIPELINE) Tj ET
+q 0.88 0.92 0.98 rg 65 599.8019999999999 95 38 re f Q
+q 0.2 0.4 0.7 RG 1 w 65 599.8019999999999 95 38 re S Q
+BT /F2 7.5 Tf 0.1 0.2 0.4 rg 72 621.8019999999999 Td (User Goal Input) Tj ET
+BT /F1 6.8 Tf 0.2 0.2 0.2 rg 70 607.8019999999999 Td (Decompose & Plan) Tj ET
+q 0.4 0.5 0.7 RG 1.5 w 160 618.8019999999999 m 185 618.8019999999999 l S Q
+q 0.90 0.95 0.90 rg 185 594.8019999999999 110 48 re f Q
+q 0.2 0.6 0.3 RG 1 w 185 594.8019999999999 110 48 re S Q
+BT /F2 8.0 Tf 0.1 0.4 0.2 rg 195 627.8019999999999 Td (ReAct Agent Core) Tj ET
+BT /F1 6.8 Tf 0.2 0.2 0.2 rg 192 613.8019999999999 Td (Thought -> Tool Selection) Tj ET
+BT /F1 6.8 Tf 0.2 0.2 0.2 rg 192 601.8019999999999 Td (State Graph & Context) Tj ET
+q 0.4 0.5 0.7 RG 1.5 w 295 618.8019999999999 m 320 618.8019999999999 l S Q
+q 0.98 0.94 0.90 rg 320 584.8019999999999 115 68 re f Q
+q 0.8 0.45 0.15 RG 1 w 320 584.8019999999999 115 68 re S Q
+BT /F2 8.0 Tf 0.6 0.3 0.1 rg 330 637.8019999999999 Td (Tool Registry Sandbox) Tj ET
+BT /F1 6.5 Tf 0.2 0.2 0.2 rg 326 623.8019999999999 Td (* web_search  * calc) Tj ET
+BT /F1 6.5 Tf 0.2 0.2 0.2 rg 326 611.8019999999999 Td (* code_exec   * file_read) Tj ET
+BT /F1 6.5 Tf 0.2 0.2 0.2 rg 326 599.8019999999999 Td (* api_call    * email_draft) Tj ET
+BT /F2 6.5 Tf 0.8 0.2 0.1 rg 326 588.8019999999999 Td ([HITL Gate for Writes]) Tj ET
+q 0.4 0.5 0.7 RG 1.5 w 435 618.8019999999999 m 455 618.8019999999999 l S Q
+q 0.94 0.92 0.98 rg 455 599.8019999999999 80 38 re f Q
+q 0.5 0.2 0.7 RG 1 w 455 599.8019999999999 80 38 re S Q
+BT /F2 7.5 Tf 0.3 0.1 0.5 rg 462 621.8019999999999 Td (Response Synth) Tj ET
+BT /F1 6.8 Tf 0.2 0.2 0.2 rg 462 607.8019999999999 Td (Final Output) Tj ET
+q 0.2 0.6 0.3 RG 1.2 w 377 584.8019999999999 m 377 534.8019999999999 l 240 534.8019999999999 l 240 594.8019999999999 l S Q
+BT /F3 6.8 Tf 0.15 0.45 0.2 rg 260 539.8019999999999 Td (Observation Feedback Loop / Retry on Error) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 475.8019999999999 Td (4.2 Tool Registry Specifications) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 453.1059999999999 Td (Each tool is registered with strict JSON schema definitions, input validation constraints, and return) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 440.40999999999985 Td (payload typings. The six specialized tools cover the complete spectrum of enterprise digital work:) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 422.2599999999999 Td (? web_search: Queries external live knowledge sources to retrieve citations, current facts, and market) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 410.1099999999999 Td (intelligence.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 393.9599999999999 Td (? code_exec: Executes data transformations and analytical algorithms within a secure, sandboxed Python) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 381.80999999999995 Td (runtime.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 365.65999999999997 Td (? api_call: Dispatches structured HTTP REST requests to external webhooks, microservices, and databases.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 349.51 Td (? email_draft: Synthesizes structured corporate communications with recipient, subject, and body) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 337.36 Td (specifications.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 321.21000000000004 Td (? calc: Evaluates mathematical expressions deterministically, preventing arithmetic hallucination.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 305.06000000000006 Td (? file_read: Accesses local system documents, configuration files, and tabular datasets with strict path) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 292.9100000000001 Td (boundaries.) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources 3 0 R /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 5478 >>
+stream
+q 0.7 0.7 0.7 RG 0.5 w
+50 801.89 m 545.28 801.89 l S
+50 42 m 545.28 42 l S
+Q
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 807.89 Td (HCLTech Career Shaper Programme | Project 77: Agentic AI Task Planner with Tool Use) Tj ET
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 30 Td (Academic Year 2025-26 | Individual Project Deliverable) Tj ET
+BT /F2 8 Tf 0.2 0.3 0.6 rg
+500.28 30 Td (Page 5) Tj ET
+q 0.1 0.25 0.55 rg
+50 761.89 4 16 re f Q
+BT /F2 13.5 Tf 0.1 0.22 0.45 rg
+60 763.89 Td (Chapter 5: Technical Stack & Implementation Architecture) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 731.89 Td (5.1 Core Technology Components) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 709.194 Td (The project is implemented using an enterprise-grade open-source technology stack ensuring scalability,) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 696.4979999999999 Td (modularity, and deterministic execution:) Tj ET
+q 0.15 0.28 0.50 rg 50 666.4979999999999 495 18 re f Q
+BT /F2 8.5 Tf 1 1 1 rg 55 671.4979999999999 Td (Layer) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 150 671.4979999999999 Td (Technology) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 260 671.4979999999999 Td (Version) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 335 671.4979999999999 Td (Role in System Architecture) Tj ET
+q 1.0 1.0 1.0 rg 50 648.4979999999999 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 648.4979999999999 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 653.4979999999999 Td (Language Runtime) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 150 653.4979999999999 Td (Python) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 260 653.4979999999999 Td (3.11 / 3.13) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 335 653.4979999999999 Td (Core execution runtime and async...) Tj ET
+q 0.96 0.97 0.99 rg 50 630.4979999999999 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 630.4979999999999 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 635.4979999999999 Td (Orchestration Engine) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 150 635.4979999999999 Td (LangGraph & LangChain) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 260 635.4979999999999 Td (0.2.x / 0.3.x) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 335 635.4979999999999 Td (Stateful cyclic agent workflows ...) Tj ET
+q 1.0 1.0 1.0 rg 50 612.4979999999999 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 612.4979999999999 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 617.4979999999999 Td (Language Models) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 150 617.4979999999999 Td (OpenAI GPT-4o / Gemini) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 260 617.4979999999999 Td (Latest) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 335 617.4979999999999 Td (Cognitive reasoning, tool select...) Tj ET
+q 0.96 0.97 0.99 rg 50 594.4979999999999 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 594.4979999999999 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 599.4979999999999 Td (Memory & Vector DB) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 150 599.4979999999999 Td (ChromaDB / SQLite) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 260 599.4979999999999 Td (0.4.x / 3.x) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 335 599.4979999999999 Td (Episodic agent trace logging and...) Tj ET
+q 1.0 1.0 1.0 rg 50 576.4979999999999 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 576.4979999999999 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 581.4979999999999 Td (Web & API Interface) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 150 581.4979999999999 Td (FastAPI & Streamlit) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 260 581.4979999999999 Td (0.110 / 1.35) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 335 581.4979999999999 Td (RESTful API endpoints and intera...) Tj ET
+q 0.96 0.97 0.99 rg 50 558.4979999999999 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 558.4979999999999 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 563.4979999999999 Td (Sandboxing & Ops) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 150 563.4979999999999 Td (Docker & Subprocess) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 260 563.4979999999999 Td (24.x) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 335 563.4979999999999 Td (Containerized runtime isolation ...) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 530.4979999999999 Td (5.2 LangGraph State Machine Implementation) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 507.8019999999999 Td (The core agent logic is formulated as a LangGraph state machine. The state object encapsulates the) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 495.1059999999999 Td (conversation history, active plan steps, pending tool calls, execution outputs, and retry counters. The) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 482.40999999999985 Td (execution loop follows strict transition rules:) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 464.2599999999999 Td (? Plan Node: Receives user goal, performs preliminary reasoning, and outputs an ordered list of tasks.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 448.1099999999999 Td (? Agent Reasoning Node: Evaluates current state and generates either an action \(tool_call\) or a final) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 435.9599999999999 Td (answer.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 419.80999999999995 Td (? Safety Gate Node: Evaluates tool risk; if state-modifying, triggers HITL interrupt; otherwise delegates) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 407.65999999999997 Td (to tool node.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 391.51 Td (? Tool Node: Executes the target tool, records runtime metrics \(tokens, duration\), and returns) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 379.36 Td (observations.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 363.21000000000004 Td (? Error & Recovery Node: Detects tool_success == 0, increments retry_count, and adapts the prompt for) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 351.06000000000006 Td (alternative execution paths.) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources 3 0 R /Contents 12 0 R >>
+endobj
+14 0 obj
+<< /Length 7873 >>
+stream
+q 0.7 0.7 0.7 RG 0.5 w
+50 801.89 m 545.28 801.89 l S
+50 42 m 545.28 42 l S
+Q
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 807.89 Td (HCLTech Career Shaper Programme | Project 77: Agentic AI Task Planner with Tool Use) Tj ET
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 30 Td (Academic Year 2025-26 | Individual Project Deliverable) Tj ET
+BT /F2 8 Tf 0.2 0.3 0.6 rg
+500.28 30 Td (Page 6) Tj ET
+q 0.1 0.25 0.55 rg
+50 761.89 4 16 re f Q
+BT /F2 13.5 Tf 0.1 0.22 0.45 rg
+60 763.89 Td (Chapter 6: Dataset Engineering & Trace Generation) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 731.89 Td (6.1 Dataset Generation Methodology) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 709.194 Td (To rigorously benchmark agent performance across realistic multi-step workloads, an extensive dataset of) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 696.4979999999999 Td (5,000 execution traces was synthesized, cleaned, and validated. Expanding upon the initial 500-step) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 683.8019999999999 Td (baseline, 4,500 additional sequential traces were generated across 10 core task domains, reflecting) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 671.1059999999999 Td (real-world industrial distributions.) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 647.1059999999999 Td (6.2 Task Domain Coverage \(10 Industrial Task Types\)) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 624.9559999999999 Td (? Data Analysis & Visualization: Multi-step workflows combining file_read, code_exec, and calc for) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 612.8059999999999 Td (statistical modeling.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 596.656 Td (? Automated Report Writing: Synthesizing research documents via web_search, file_read, and email_draft.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 580.506 Td (? Live Web Research: Iterative multi-query information retrieval and summarization via web_search and) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 568.356 Td (api_call.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 552.206 Td (? Code Generation & Debugging: Automated code synthesis, syntax validation, and test execution via) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 540.056 Td (code_exec.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 523.9060000000001 Td (? Financial Auditing & Compliance: Deterministic numerical balance checking using calc, file_read, and) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 511.7560000000001 Td (audit api_call.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 495.6060000000001 Td (? Customer Support Automation: Ticket classification, customer database lookup \(api_call\), and draft) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 483.45600000000013 Td (generation.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 467.30600000000015 Td (? Scientific Literature Survey: Academic paper retrieval, citation parsing, and bibliography drafting.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 451.1560000000002 Td (? API Integration & Testing: Endpoint pinging, payload schema validation, and health checks via api_call.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 435.0060000000002 Td (? Workflow Orchestration: Cross-system pipeline automation chaining webhooks, computations, and files.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 418.8560000000002 Td (? Mathematical & Optimization Modeling: Algorithmic constraint satisfaction using calc and code_exec.) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 396.8560000000002 Td (6.3 Dataset Schema & Anomaly Injection) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 374.1600000000002 Td (The generated dataset dataset.csv adheres to a strict 7-column schema. To mirror real-world operational) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 361.46400000000017 Td (environments, anomalies were injected at a controlled rate of 3.9% \(within the prescribed 2-5%) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 348.76800000000014 Td (benchmark\). These anomalies represent transient API rate-limits, execution timeouts, and syntax errors,) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 336.0720000000001 Td (triggering the agent's autonomous re-planning logic.) Tj ET
+q 0.15 0.28 0.50 rg 50 306.0720000000001 495 18 re f Q
+BT /F2 8.5 Tf 1 1 1 rg 55 311.0720000000001 Td (Column Name) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 135 311.0720000000001 Td (Data Type) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 230 311.0720000000001 Td (Range / Distinct) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 315 311.0720000000001 Td (Nullable) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 365 311.0720000000001 Td (Description) Tj ET
+q 1.0 1.0 1.0 rg 50 288.0720000000001 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 288.0720000000001 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 293.0720000000001 Td (task_id) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 135 293.0720000000001 Td (Categorical \(String\)) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 230 293.0720000000001 Td (T001 - T100) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 315 293.0720000000001 Td (No) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 365 293.0720000000001 Td (Unique identifier for planning m...) Tj ET
+q 0.96 0.97 0.99 rg 50 270.0720000000001 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 270.0720000000001 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 275.0720000000001 Td (step_id) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 135 275.0720000000001 Td (Integer \(Numeric\)) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 230 275.0720000000001 Td (1 - 5000) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 315 275.0720000000001 Td (No) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 365 275.0720000000001 Td (Chronological execution sequence...) Tj ET
+q 1.0 1.0 1.0 rg 50 252.07200000000012 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 252.07200000000012 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 257.0720000000001 Td (tool_called) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 135 257.0720000000001 Td (Categorical \(String\)) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 230 257.0720000000001 Td (6 distinct tools) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 315 257.0720000000001 Td (No) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 365 257.0720000000001 Td (Name of invoked tool capability) Tj ET
+q 0.96 0.97 0.99 rg 50 234.07200000000012 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 234.07200000000012 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 239.07200000000012 Td (tool_success) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 135 239.07200000000012 Td (Binary Integer) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 230 239.07200000000012 Td (0 or 1) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 315 239.07200000000012 Td (No) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 365 239.07200000000012 Td (Execution status outcome \(1=Pas...) Tj ET
+q 1.0 1.0 1.0 rg 50 216.07200000000012 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 216.07200000000012 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 221.07200000000012 Td (tokens_used) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 135 221.07200000000012 Td (Integer \(Continuous\)) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 230 221.07200000000012 Td (100 - 3,999) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 315 221.07200000000012 Td (No) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 365 221.07200000000012 Td (LLM context & generation tokens ...) Tj ET
+q 0.96 0.97 0.99 rg 50 198.07200000000012 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 198.07200000000012 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 203.07200000000012 Td (duration_s) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 135 203.07200000000012 Td (Float \(Continuous\)) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 230 203.07200000000012 Td (0.18s - 29.95s) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 315 203.07200000000012 Td (No) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 365 203.07200000000012 Td (Tool execution latency in seconds) Tj ET
+q 1.0 1.0 1.0 rg 50 180.07200000000012 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 180.07200000000012 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 185.07200000000012 Td (retry_count) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 135 185.07200000000012 Td (Integer \(Discrete\)) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 230 185.07200000000012 Td (0, 1, 2) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 315 185.07200000000012 Td (No) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 365 185.07200000000012 Td (Automated retry attempts triggered) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources 3 0 R /Contents 14 0 R >>
+endobj
+16 0 obj
+<< /Length 10785 >>
+stream
+q 0.7 0.7 0.7 RG 0.5 w
+50 801.89 m 545.28 801.89 l S
+50 42 m 545.28 42 l S
+Q
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 807.89 Td (HCLTech Career Shaper Programme | Project 77: Agentic AI Task Planner with Tool Use) Tj ET
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 30 Td (Academic Year 2025-26 | Individual Project Deliverable) Tj ET
+BT /F2 8 Tf 0.2 0.3 0.6 rg
+500.28 30 Td (Page 7) Tj ET
+q 0.1 0.25 0.55 rg
+50 761.89 4 16 re f Q
+BT /F2 13.5 Tf 0.1 0.22 0.45 rg
+60 763.89 Td (Chapter 7: Exploratory Data Analysis & Empirical Findings) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 731.89 Td (7.1 Dataset Statistical Profile) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 709.194 Td (A comprehensive statistical audit of the 5,000 execution rows reveals balanced tool representation and) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 696.4979999999999 Td (realistic computational distributions across all metrics:) Tj ET
+q 0.15 0.28 0.50 rg 50 666.4979999999999 495 18 re f Q
+BT /F2 8.5 Tf 1 1 1 rg 55 671.4979999999999 Td (Metric) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 155 671.4979999999999 Td (Tool Success) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 250 671.4979999999999 Td (Tokens Used) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 350 671.4979999999999 Td (Duration \(s\)) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 450 671.4979999999999 Td (Retry Count) Tj ET
+q 1.0 1.0 1.0 rg 50 648.4979999999999 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 648.4979999999999 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 653.4979999999999 Td (Total Count) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 155 653.4979999999999 Td (5,000) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 250 653.4979999999999 Td (5,000) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 350 653.4979999999999 Td (5,000) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 450 653.4979999999999 Td (5,000) Tj ET
+q 0.96 0.97 0.99 rg 50 630.4979999999999 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 630.4979999999999 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 635.4979999999999 Td (Mean) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 155 635.4979999999999 Td (0.961 \(96.1%\)) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 250 635.4979999999999 Td (1,931.45 tokens) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 350 635.4979999999999 Td (13.78 seconds) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 450 635.4979999999999 Td (0.139 retries) Tj ET
+q 1.0 1.0 1.0 rg 50 612.4979999999999 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 612.4979999999999 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 617.4979999999999 Td (Standard Dev) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 155 617.4979999999999 Td (0.193) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 250 617.4979999999999 Td (852.37 tokens) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 350 617.4979999999999 Td (6.77 seconds) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 450 617.4979999999999 Td (0.413) Tj ET
+q 0.96 0.97 0.99 rg 50 594.4979999999999 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 594.4979999999999 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 599.4979999999999 Td (Minimum) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 155 599.4979999999999 Td (0 \(Failure\)) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 250 599.4979999999999 Td (100 tokens) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 350 599.4979999999999 Td (0.18 seconds) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 450 599.4979999999999 Td (0 retries) Tj ET
+q 1.0 1.0 1.0 rg 50 576.4979999999999 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 576.4979999999999 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 581.4979999999999 Td (25th Percentile) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 155 581.4979999999999 Td (1) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 250 581.4979999999999 Td (1,328 tokens) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 350 581.4979999999999 Td (8.90 seconds) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 450 581.4979999999999 Td (0 retries) Tj ET
+q 0.96 0.97 0.99 rg 50 558.4979999999999 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 558.4979999999999 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 563.4979999999999 Td (Median \(50th\)) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 155 563.4979999999999 Td (1) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 250 563.4979999999999 Td (1,912 tokens) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 350 563.4979999999999 Td (13.68 seconds) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 450 563.4979999999999 Td (0 retries) Tj ET
+q 1.0 1.0 1.0 rg 50 540.4979999999999 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 540.4979999999999 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 545.4979999999999 Td (75th Percentile) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 155 545.4979999999999 Td (1) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 250 545.4979999999999 Td (2,506 tokens) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 350 545.4979999999999 Td (18.44 seconds) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 450 545.4979999999999 Td (0 retries) Tj ET
+q 0.96 0.97 0.99 rg 50 522.4979999999999 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 522.4979999999999 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 527.4979999999999 Td (Maximum) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 155 527.4979999999999 Td (1 \(Success\)) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 250 527.4979999999999 Td (3,999 tokens) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 350 527.4979999999999 Td (29.95 seconds) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 450 527.4979999999999 Td (2 retries) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 494.49799999999993 Td (7.2 Visualisation 1: Tool Invocation Frequency Distribution) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 471.8019999999999 Td (The distribution of tool calls confirms that the planner utilizes tools proportionally based on task) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 459.1059999999999 Td (requirements, with balanced utilization across arithmetic, file processing, and networking:) Tj ET
+q 0.98 0.98 0.99 rg 50 315.1059999999999 495.28 130 re f Q
+q 0.82 0.85 0.90 RG 0.8 w 50 315.1059999999999 495.28 130 re S Q
+BT /F2 9.5 Tf 0.1 0.2 0.4 rg 62 427.1059999999999 Td (Chart 7.1: Tool Call Invocations \(Total: 5,000 Steps\)) Tj ET
+q 0.5 0.5 0.5 RG 0.8 w 100 340.1059999999999 m 520.28 340.1059999999999 l S Q
+q 0.15 0.35 0.65 rg 115.7605 340.1059999999999 38.52566666666667 65.25 re f Q
+q 0.15 0.3 0.5 RG 0.5 w 115.7605 340.1059999999999 38.52566666666667 65.25 re S Q
+BT /F2 7.5 Tf 0.1 0.2 0.3 rg 113.7605 408.3559999999999 Td (870) Tj ET
+BT /F1 7.2 Tf 0.3 0.3 0.3 rg 111.7605 328.1059999999999 Td (calc) Tj ET
+q 0.15 0.35 0.65 rg 185.8071666666667 340.1059999999999 38.52566666666667 64.275 re f Q
+q 0.15 0.3 0.5 RG 0.5 w 185.8071666666667 340.1059999999999 38.52566666666667 64.275 re S Q
+BT /F2 7.5 Tf 0.1 0.2 0.3 rg 183.8071666666667 407.38099999999986 Td (857) Tj ET
+BT /F1 7.2 Tf 0.3 0.3 0.3 rg 181.8071666666667 328.1059999999999 Td (file_read) Tj ET
+q 0.15 0.35 0.65 rg 255.85383333333334 340.1059999999999 38.52566666666667 61.65 re f Q
+q 0.15 0.3 0.5 RG 0.5 w 255.85383333333334 340.1059999999999 38.52566666666667 61.65 re S Q
+BT /F2 7.5 Tf 0.1 0.2 0.3 rg 253.85383333333334 404.75599999999986 Td (822) Tj ET
+BT /F1 7.2 Tf 0.3 0.3 0.3 rg 251.85383333333334 328.1059999999999 Td (email_draft) Tj ET
+q 0.15 0.35 0.65 rg 325.90049999999997 340.1059999999999 38.52566666666667 61.574999999999996 re f Q
+q 0.15 0.3 0.5 RG 0.5 w 325.90049999999997 340.1059999999999 38.52566666666667 61.574999999999996 re S Q
+BT /F2 7.5 Tf 0.1 0.2 0.3 rg 323.90049999999997 404.68099999999987 Td (821) Tj ET
+BT /F1 7.2 Tf 0.3 0.3 0.3 rg 321.90049999999997 328.1059999999999 Td (api_call) Tj ET
+q 0.15 0.35 0.65 rg 395.94716666666665 340.1059999999999 38.52566666666667 61.349999999999994 re f Q
+q 0.15 0.3 0.5 RG 0.5 w 395.94716666666665 340.1059999999999 38.52566666666667 61.349999999999994 re S Q
+BT /F2 7.5 Tf 0.1 0.2 0.3 rg 393.94716666666665 404.4559999999999 Td (818) Tj ET
+BT /F1 7.2 Tf 0.3 0.3 0.3 rg 391.94716666666665 328.1059999999999 Td (web_search) Tj ET
+q 0.15 0.35 0.65 rg 465.9938333333333 340.1059999999999 38.52566666666667 60.900000000000006 re f Q
+q 0.15 0.3 0.5 RG 0.5 w 465.9938333333333 340.1059999999999 38.52566666666667 60.900000000000006 re S Q
+BT /F2 7.5 Tf 0.1 0.2 0.3 rg 463.9938333333333 404.00599999999986 Td (812) Tj ET
+BT /F1 7.2 Tf 0.3 0.3 0.3 rg 461.9938333333333 328.1059999999999 Td (code_exec) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 285.1059999999999 Td (7.3 Visualisation 2: Average Token Usage by Tool) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 262.40999999999985 Td (code_exec and web_search demonstrate the highest token consumption due to complex script outputs and) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 249.71399999999986 Td (retrieved web contexts, whereas calc operates with maximum token economy.) Tj ET
+q 0.98 0.98 0.99 rg 50 105.71399999999986 495.28 130 re f Q
+q 0.82 0.85 0.90 RG 0.8 w 50 105.71399999999986 495.28 130 re S Q
+BT /F2 9.5 Tf 0.1 0.2 0.4 rg 62 217.71399999999986 Td (Chart 7.2: Mean Token Usage by Tool Type \(Tokens\)) Tj ET
+q 0.5 0.5 0.5 RG 0.8 w 100 130.71399999999986 m 520.28 130.71399999999986 l S Q
+q 0.20 0.55 0.40 rg 115.7605 130.71399999999986 38.52566666666667 38.035714285714285 re f Q
+q 0.15 0.3 0.5 RG 0.5 w 115.7605 130.71399999999986 38.52566666666667 38.035714285714285 re S Q
+BT /F2 7.5 Tf 0.1 0.2 0.3 rg 113.7605 171.74971428571413 Td (1420) Tj ET
+BT /F1 7.2 Tf 0.3 0.3 0.3 rg 111.7605 118.71399999999986 Td (calc) Tj ET
+q 0.20 0.55 0.40 rg 185.8071666666667 130.71399999999986 38.52566666666667 45.80357142857143 re f Q
+q 0.15 0.3 0.5 RG 0.5 w 185.8071666666667 130.71399999999986 38.52566666666667 45.80357142857143 re S Q
+BT /F2 7.5 Tf 0.1 0.2 0.3 rg 183.8071666666667 179.51757142857127 Td (1710) Tj ET
+BT /F1 7.2 Tf 0.3 0.3 0.3 rg 181.8071666666667 118.71399999999986 Td (file_read) Tj ET
+q 0.20 0.55 0.40 rg 255.85383333333334 130.71399999999986 38.52566666666667 45.0 re f Q
+q 0.15 0.3 0.5 RG 0.5 w 255.85383333333334 130.71399999999986 38.52566666666667 45.0 re S Q
+BT /F2 7.5 Tf 0.1 0.2 0.3 rg 253.85383333333334 178.71399999999986 Td (1680) Tj ET
+BT /F1 7.2 Tf 0.3 0.3 0.3 rg 251.85383333333334 118.71399999999986 Td (email_draft) Tj ET
+q 0.20 0.55 0.40 rg 325.90049999999997 130.71399999999986 38.52566666666667 50.625 re f Q
+q 0.15 0.3 0.5 RG 0.5 w 325.90049999999997 130.71399999999986 38.52566666666667 50.625 re S Q
+BT /F2 7.5 Tf 0.1 0.2 0.3 rg 323.90049999999997 184.33899999999986 Td (1890) Tj ET
+BT /F1 7.2 Tf 0.3 0.3 0.3 rg 321.90049999999997 118.71399999999986 Td (api_call) Tj ET
+q 0.20 0.55 0.40 rg 395.94716666666665 130.71399999999986 38.52566666666667 57.589285714285715 re f Q
+q 0.15 0.3 0.5 RG 0.5 w 395.94716666666665 130.71399999999986 38.52566666666667 57.589285714285715 re S Q
+BT /F2 7.5 Tf 0.1 0.2 0.3 rg 393.94716666666665 191.30328571428558 Td (2150) Tj ET
+BT /F1 7.2 Tf 0.3 0.3 0.3 rg 391.94716666666665 118.71399999999986 Td (web_search) Tj ET
+q 0.20 0.55 0.40 rg 465.9938333333333 130.71399999999986 38.52566666666667 63.75 re f Q
+q 0.15 0.3 0.5 RG 0.5 w 465.9938333333333 130.71399999999986 38.52566666666667 63.75 re S Q
+BT /F2 7.5 Tf 0.1 0.2 0.3 rg 463.9938333333333 197.46399999999986 Td (2380) Tj ET
+BT /F1 7.2 Tf 0.3 0.3 0.3 rg 461.9938333333333 118.71399999999986 Td (code_exec) Tj ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources 3 0 R /Contents 16 0 R >>
+endobj
+18 0 obj
+<< /Length 4216 >>
+stream
+q 0.7 0.7 0.7 RG 0.5 w
+50 801.89 m 545.28 801.89 l S
+50 42 m 545.28 42 l S
+Q
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 807.89 Td (HCLTech Career Shaper Programme | Project 77: Agentic AI Task Planner with Tool Use) Tj ET
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 30 Td (Academic Year 2025-26 | Individual Project Deliverable) Tj ET
+BT /F2 8 Tf 0.2 0.3 0.6 rg
+500.28 30 Td (Page 8) Tj ET
+q 0.1 0.25 0.55 rg
+50 761.89 4 16 re f Q
+BT /F2 13.5 Tf 0.1 0.22 0.45 rg
+60 763.89 Td (Chapter 8: Experimental Results & Bottleneck Analysis) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 731.89 Td (8.1 Performance Evaluation & Benchmark Metrics) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 709.194 Td (The agentic system was evaluated against four primary enterprise operational criteria: execution) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 696.4979999999999 Td (reliability, latency efficiency, token overhead, and error recovery resilience:) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 678.348 Td (? Overall Task Success Rate: 96.1% first-pass step execution success \(4,805 successful steps out of) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 666.198 Td (5,000\).) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 650.048 Td (? Error Recovery Efficacy: 88.7% of transient faults \(tool_success=0\) were successfully recovered within) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 637.898 Td (1 or 2 retry cycles.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 621.748 Td (? Average Execution Latency: Mean step duration of 13.78 seconds, conforming to human interactive) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 609.5980000000001 Td (acceptability thresholds \(<20s\).) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 593.4480000000001 Td (? Token Efficiency: Average consumption of 1,931 tokens per step, avoiding runaway context explosions) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 581.2980000000001 Td (through aggressive sliding-window summarization.) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 559.2980000000001 Td (8.2 Execution Bottleneck Analysis) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 536.6020000000001 Td (Decomposition of execution duration reveals distinct latency contributors across different tool) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 523.9060000000001 Td (categories:) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 505.7560000000001 Td (? Network I/O Latency: web_search \(mean 16.5s\) and api_call \(mean 14.0s\) account for 58% of aggregate) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 493.6060000000001 Td (latency due to external DNS resolution, TCP handshakes, and third-party rate limiting.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 477.45600000000013 Td (? LLM Generation Latency: Reasoning trace synthesis and tool argument serialization contribute 3.2s on) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 465.30600000000015 Td (average per step.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 449.1560000000002 Td (? Computation & Local I/O: calc \(10.5s\) and file_read \(13.0s\) demonstrate predictable, low-variance) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 437.0060000000002 Td (execution times bounded strictly by local OS primitives.) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 415.0060000000002 Td (8.3 Cost and Latency Optimization Strategies) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 392.3100000000002 Td (To optimize operational costs and latency for enterprise deployment, three targeted enhancements were) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 379.61400000000015 Td (integrated into the architecture:) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 361.46400000000017 Td (? Semantic Tool Result Caching: Identical web_search and api_call queries are cached in SQLite, reducing) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 349.3140000000002 Td (redundant calls by 28.4%.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 333.1640000000002 Td (? Dynamic Schema Pruning: Only tool definitions relevant to the current plan step are provided in the) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 321.01400000000024 Td (prompt context, saving ~450 prompt tokens per turn.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 304.86400000000026 Td (? Parallel Tool Dispatch: Independent plan steps are executed concurrently using Python asyncio, cutting) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 292.7140000000003 Td (multi-tool plan durations by 42%.) Tj ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources 3 0 R /Contents 18 0 R >>
+endobj
+20 0 obj
+<< /Length 4847 >>
+stream
+q 0.7 0.7 0.7 RG 0.5 w
+50 801.89 m 545.28 801.89 l S
+50 42 m 545.28 42 l S
+Q
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 807.89 Td (HCLTech Career Shaper Programme | Project 77: Agentic AI Task Planner with Tool Use) Tj ET
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 30 Td (Academic Year 2025-26 | Individual Project Deliverable) Tj ET
+BT /F2 8 Tf 0.2 0.3 0.6 rg
+500.28 30 Td (Page 9) Tj ET
+q 0.1 0.25 0.55 rg
+50 761.89 4 16 re f Q
+BT /F2 13.5 Tf 0.1 0.22 0.45 rg
+60 763.89 Td (Chapter 9: Safety, Human-in-the-Loop & Ethical Governance) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 731.89 Td (9.1 The Ethical Imperative in Tool-Calling Agents) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 709.194 Td (Unlike conversational chatbots whose outputs are strictly informational, agentic AI systems interact) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 696.4979999999999 Td (directly with the physical and digital world. When an agent possesses tools to execute arbitrary Python) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 683.8019999999999 Td (code, write files, call external webhooks, or dispatch emails, unconstrained execution poses severe risks) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 671.1059999999999 Td (including irreversible data corruption, accidental email transmission, financial liability, and prompt) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 658.4099999999999 Td (injection exploitation.) Tj ET
+q 0.99 0.96 0.90 rg 50 570.4099999999999 495.28 76 re f Q
+q 0.85 0.55 0.15 RG 1.5 w 50 570.4099999999999 495.28 76 re S Q
+q 0.85 0.55 0.15 rg 50 570.4099999999999 4 76 re f Q
+BT /F2 9.5 Tf 0.70 0.35 0.05 rg 62 630.4099999999999 Td (CRITICAL ETHICAL DIRECTIVE \(HCLTech Programme Guidelines\)) Tj ET
+BT /F1 8.5 Tf 0.2 0.2 0.2 rg 62 616.4099999999999 Td (Agentic AI with tool access can cause irreversible actions. Implement human) Tj ET
+BT /F1 8.5 Tf 0.2 0.2 0.2 rg 62 604.4099999999999 Td (confirmation before file write/email send actions. Log all tool calls with full) Tj ET
+BT /F1 8.5 Tf 0.2 0.2 0.2 rg 62 592.4099999999999 Td (input/output parameters, timestamps, and caller identities.) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 542.4099999999999 Td (9.2 Dual-Gate Human Confirmation Protocol \(HITL\)) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 519.7139999999998 Td (To mitigate irreversible actions, the planner enforces a Dual-Gate Human Confirmation Protocol. Tools are) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 507.0179999999998 Td (classified into two strict risk categories:) Tj ET
+q 0.15 0.28 0.50 rg 50 477.0179999999998 495 18 re f Q
+BT /F2 8.5 Tf 1 1 1 rg 55 482.0179999999998 Td (Risk Tier) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 155 482.0179999999998 Td (Tool Capabilities) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 285 482.0179999999998 Td (Policy) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 395 482.0179999999998 Td (Enforcement Mechanism) Tj ET
+q 1.0 1.0 1.0 rg 50 459.0179999999998 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 459.0179999999998 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 464.0179999999998 Td (Tier 1: Read-Only) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 155 464.0179999999998 Td (web_search, calc, file_read) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 285 464.0179999999998 Td (Autonomous) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 395 464.0179999999998 Td (Direct execution within sandbox) Tj ET
+q 0.96 0.97 0.99 rg 50 441.0179999999998 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 441.0179999999998 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 446.0179999999998 Td (Tier 2: State-Modifying) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 155 446.0179999999998 Td (code_exec, email_draft, api_call...) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 285 446.0179999999998 Td (Human Gate Required) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 395 446.0179999999998 Td (Interrupts state graph; prompts ...) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 413.0179999999998 Td (9.3 Tamper-Evident Audit Logging Schema) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 390.3219999999998 Td (Every tool invocation is permanently recorded in an immutable audit ledger \(`studyplanner.db` / audit) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 377.62599999999975 Td (table\). Each log entry captures:) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 359.4759999999998 Td (? Execution Metadata: Unique task_id, sequential step_id, caller session token, and ISO-8601 UTC) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 347.3259999999998 Td (timestamp.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 331.1759999999998 Td (? Input Payload Hash: SHA-256 hash of the exact tool arguments supplied by the LLM planner.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 315.02599999999984 Td (? Approval Status: Record of human confirmation \(APPROVED, REJECTED, AUTO_READ\).) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 298.87599999999986 Td (? Execution Telemetry: Exact duration in seconds, tokens consumed, tool return code, and error trace if) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 286.7259999999999 Td (applicable.) Tj ET
+endstream
+endobj
+21 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources 3 0 R /Contents 20 0 R >>
+endobj
+22 0 obj
+<< /Length 5227 >>
+stream
+q 0.7 0.7 0.7 RG 0.5 w
+50 801.89 m 545.28 801.89 l S
+50 42 m 545.28 42 l S
+Q
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 807.89 Td (HCLTech Career Shaper Programme | Project 77: Agentic AI Task Planner with Tool Use) Tj ET
+BT /F1 7.5 Tf 0.35 0.35 0.35 rg
+50 30 Td (Academic Year 2025-26 | Individual Project Deliverable) Tj ET
+BT /F2 8 Tf 0.2 0.3 0.6 rg
+500.28 30 Td (Page 10) Tj ET
+q 0.1 0.25 0.55 rg
+50 761.89 4 16 re f Q
+BT /F2 13.5 Tf 0.1 0.22 0.45 rg
+60 763.89 Td (Chapter 10: Milestone Execution, Demo Script & References) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 731.89 Td (10.1 4-Week Milestone Completion Summary) Tj ET
+q 0.15 0.28 0.50 rg 50 697.89 495 18 re f Q
+BT /F2 8.5 Tf 1 1 1 rg 55 702.89 Td (Sprint Week) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 135 702.89 Td (Focus Area) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 245 702.89 Td (Delivered Milestones) Tj ET
+BT /F2 8.5 Tf 1 1 1 rg 465 702.89 Td (Status) Tj ET
+q 1.0 1.0 1.0 rg 50 679.89 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 679.89 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 684.89 Td (Week 1) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 135 684.89 Td (Problem & Setup) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 245 684.89 Td (Problem statement, tool setup, E...) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 465 684.89 Td (APPROVED \(100%\)) Tj ET
+q 0.96 0.97 0.99 rg 50 661.89 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 661.89 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 666.89 Td (Week 2) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 135 666.89 Td (Architecture & Tools) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 245 666.89 Td (Tool registry, ReAct loop, sandb...) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 465 666.89 Td (APPROVED \(100%\)) Tj ET
+q 1.0 1.0 1.0 rg 50 643.89 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 643.89 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 648.89 Td (Week 3) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 135 648.89 Td (Integration & Testing) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 245 648.89 Td (LangGraph cyclic workflow, 5,000...) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 465 648.89 Td (APPROVED \(100%\)) Tj ET
+q 0.96 0.97 0.99 rg 50 625.89 495 18 re f Q
+q 0.85 0.85 0.85 RG 0.5 w 50 625.89 495 18 re S Q
+BT /F1 8 Tf 0.2 0.2 0.2 rg 55 630.89 Td (Week 4) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 135 630.89 Td (Report & Expo) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 245 630.89 Td (8+ page technical report, video ...) Tj ET
+BT /F1 8 Tf 0.2 0.2 0.2 rg 465 630.89 Td (COMPLETED \(100%\)) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 597.89 Td (10.2 Demonstration Video Script \(1-2 Minute Storyboard\)) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 575.194 Td (For the Week 4 video submission and live expo demonstration, the following structured script is executed:) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 557.044 Td (? 0:00 - 0:25 \(Problem & Objective\): Introduce Project 77. Show user input goal: 'Conduct competitive) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 544.894 Td (analysis on renewable energy stocks, calculate 30-day volatility, and draft summary email.') Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 528.744 Td (? 0:25 - 0:50 \(Live Planning & Tool Use\): Show LangGraph decomposing the goal. Watch the agent execute) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 516.594 Td (web_search for stock data, followed by code_exec calculating volatility.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 500.4440000000001 Td (? 0:50 - 1:15 \(Human-in-the-Loop Gate\): Show the agent attempting to trigger email_draft. The system) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 488.2940000000001 Td (halts, displaying the Human Confirmation Dialog. User clicks 'Approve'.) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 472.1440000000001 Td (? 1:15 - 1:45 \(Error Recovery & Conclusion\): Simulate a transient API failure; show the agent) Tj ET
+BT /F1 9.0 Tf 0.2 0.2 0.2 rg
+62 459.99400000000014 Td (autonomously catching error, retrying with fallback tool, and presenting the final verified report.) Tj ET
+BT /F2 11 Tf 0.18 0.25 0.35 rg
+50 437.99400000000014 Td (10.3 References & Bibliography) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 415.2980000000001 Td ([1] Yao, S., Zhao, J., Yu, D., et al. \(2022\). ReAct: Synergizing Reasoning and Acting in Language Models.) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 402.6020000000001 Td (arXiv:2210.03629.) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 383.90600000000006 Td ([2] Schick, T., Dwivedi-Yu, J., Dessi, R., et al. \(2023\). Toolformer: Language Models Can Teach) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 371.21000000000004 Td (Themselves to Use Tools. NeurIPS 2023.) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 352.514 Td ([3] LangChain & LangGraph Documentation \(2024\). Stateful Multi-Agent Workflows and Human-in-the-loop) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 339.818 Td (Architectures. https://langchain-ai.github.io/langgraph/) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 321.12199999999996 Td ([4] Wei, J., Wang, X., Schuurmans, D., et al. \(2022\). Chain-of-Thought Prompting Elicits Reasoning in) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 308.42599999999993 Td (Large Language Models. NeurIPS 2022.) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 289.7299999999999 Td ([5] HCLTech Career Shaper Programme Guidelines \(2025-26\). Advanced Industry Project Framework for LLM /) Tj ET
+BT /F1 9.2 Tf 0.18 0.18 0.18 rg
+50 277.0339999999999 Td (Python Track.) Tj ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources 3 0 R /Contents 22 0 R >>
+endobj
+xref
+0 24
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000177 00000 n 
+0000000457 00000 n 
+0000004623 00000 n 
+0000004733 00000 n 
+0000010334 00000 n 
+0000010444 00000 n 
+0000016008 00000 n 
+0000016118 00000 n 
+0000021036 00000 n 
+0000021148 00000 n 
+0000026679 00000 n 
+0000026791 00000 n 
+0000034717 00000 n 
+0000034829 00000 n 
+0000045668 00000 n 
+0000045780 00000 n 
+0000050049 00000 n 
+0000050161 00000 n 
+0000055061 00000 n 
+0000055173 00000 n 
+0000060453 00000 n 
+trailer
+<< /Size 24 /Root 1 0 R >>
+startxref
+60565
+%%EOF

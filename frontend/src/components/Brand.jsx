@@ -1,12 +1,15 @@
-import { Command } from "lucide-react";
+import React from "react";
+import { Sparkles, Calendar } from "lucide-react";
 
-export default function Brand({ inverse = false }) {
+export default function Brand({ inverse = false, size = "normal" }) {
   return (
-    <span className={`brand ${inverse ? "brand-inverse" : ""}`}>
-      <span className="brand-mark">
-        <Command size={17} strokeWidth={2.4} />
+    <div className={`brand ${inverse ? "brand-inverse" : ""} brand-${size}`}>
+      <span className="brand-icon-wrapper">
+        <Sparkles size={size === "large" ? 20 : 16} strokeWidth={2.4} />
       </span>
-      daymark<span className="brand-period">.</span>
-    </span>
+      <span className="brand-text">
+        Daymark<span className="brand-accent">.ai</span>
+      </span>
+    </div>
   );
 }

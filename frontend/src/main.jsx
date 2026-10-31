@@ -1,13 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import App from './App.jsx';
-import './styles.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App.jsx";
+import { ToastProvider } from "./context/ToastContext.jsx";
+import { getInitialTheme, applyTheme } from "./utils/theme.js";
+import "./styles.css";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+// Initialize theme on initial load
+const initialTheme = getInitialTheme();
+applyTheme(initialTheme);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <ToastProvider>
+        <App />
+      </ToastProvider>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 );

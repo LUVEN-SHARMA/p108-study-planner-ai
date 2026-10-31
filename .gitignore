@@ -34,3 +34,8 @@ frontend/dist/
 
 # Local container/database data
 data/runtime/
+
+# OS metadata
+.DS_Store
+*.DS_Store
+
