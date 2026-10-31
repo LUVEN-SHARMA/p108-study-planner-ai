@@ -50,5 +50,6 @@ export const api = {
       `/sessions/${id}`,
       json("PATCH", { status, minutes_spent: minutesSpent, note }),
     ),
+  deleteSession: (id) => request(`/sessions/${id}`, { method: "DELETE" }),
   exportUrl: `${API_BASE}/plan/export.ics`,
 };

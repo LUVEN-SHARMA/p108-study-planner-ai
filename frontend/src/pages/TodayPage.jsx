@@ -341,6 +341,7 @@ export default function TodayPage({
                           <span>Done</span>
                         </button>
                         <button
+                          type="button"
                           className="button button-quiet button-small"
                           onClick={() =>
                             runAction(
@@ -351,21 +352,110 @@ export default function TodayPage({
                         >
                           Missed
                         </button>
+                        <button
+                          type="button"
+                          className="icon-button danger-icon"
+                          onClick={() =>
+                            runAction(
+                              () => api.deleteSession(sess.id),
+                              `Deleted "${sess.topic_name}" from timetable.`
+                            )
+                          }
+                          title="Delete session"
+                        >
+                          <Trash2 size={14} />
+                        </button>
                       </div>
                     </div>
                   )}
 
                   {isCompleted && (
-                    <div className="session-done-label">
-                      <CheckCircle2 size={16} />
-                      <span>Completed ({sess.minutes_spent || 60} mins studied)</span>
+                    <div className="session-resolved-row">
+                      <div className="session-done-label">
+                        <CheckCircle2 size={16} />
+                        <span>Completed ({sess.minutes_spent || 60} mins)</span>
+                      </div>
+                      <div className="session-resolved-actions">
+                        <button
+                          type="button"
+                          className="button button-quiet button-small"
+                          onClick={() =>
+                            runAction(
+                              () => api.updateSession(sess.id, "pending"),
+                              `Restored "${sess.topic_name}" to pending.`
+                            )
+                          }
+                          title="Reset status back to pending"
+                        >
+                          <RotateCcw size={13} />
+                          <span>Reset</span>
+                        </button>
+                        <button
+                          type="button"
+                          className="icon-button danger-icon"
+                          onClick={() =>
+                            runAction(
+                              () => api.deleteSession(sess.id),
+                              `Deleted "${sess.topic_name}" from timetable.`
+                            )
+                          }
+                          title="Delete completed session"
+                        >
+                          <Trash2 size={14} />
+                        </button>
+                      </div>
                     </div>
                   )}
 
                   {isMissed && (
-                    <div className="session-missed-label">
-                      <X size={16} />
-                      <span>Marked Missed · Re-plan available on Study Plan page</span>
+                    <div className="session-resolved-row">
+                      <div className="session-missed-label">
+                        <X size={16} />
+                        <span>Marked Missed</span>
+                      </div>
+                      <div className="session-resolved-actions">
+                        <button
+                          type="button"
+                          className="button button-success button-small"
+                          onClick={() =>
+                            runAction(
+                              () => api.updateSession(sess.id, "completed", 60),
+                              `Marked "${sess.topic_name}" as completed!`
+                            )
+                          }
+                          title="Mark completed"
+                        >
+                          <Check size={13} />
+                          <span>Done</span>
+                        </button>
+                        <button
+                          type="button"
+                          className="button button-quiet button-small"
+                          onClick={() =>
+                            runAction(
+                              () => api.updateSession(sess.id, "pending"),
+                              `Restored "${sess.topic_name}" to pending.`
+                            )
+                          }
+                          title="Reset back to pending"
+                        >
+                          <RotateCcw size={13} />
+                          <span>Reset</span>
+                        </button>
+                        <button
+                          type="button"
+                          className="icon-button danger-icon"
+                          onClick={() =>
+                            runAction(
+                              () => api.deleteSession(sess.id),
+                              `Deleted "${sess.topic_name}" from timetable.`
+                            )
+                          }
+                          title="Delete missed session"
+                        >
+                          <Trash2 size={14} />
+                        </button>
+                      </div>
                     </div>
                   )}
                 </div>

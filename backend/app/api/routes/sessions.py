@@ -44,3 +44,15 @@ def update_session_status(
         kind=session.kind,
         status=session.status
     )
+
+@router.delete("/{session_id}", status_code=204)
+def delete_session(session_id: int, db: Session = Depends(get_db)):
+    """Delete a plan session from the timetable."""
+    session = db.query(PlanSession).filter(PlanSession.id == session_id).first()
+    if not session:
+        raise HTTPException(status_code=404, detail="Plan session not found")
+
+    db.delete(session)
+    db.commit()
+    return None
+

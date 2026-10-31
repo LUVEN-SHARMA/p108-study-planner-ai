@@ -2985,6 +2985,23 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-
   font-size: 0.82rem;
 }
 
+.session-resolved-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.session-resolved-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+}
+
+
 /* ==========================================================================
    PLAN & CALENDAR PAGE STYLES
    ========================================================================== */

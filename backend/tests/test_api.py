@@ -236,3 +236,51 @@ def test_daily_tasks_can_be_created_completed_missed_and_deleted():
     finally:
         app.dependency_overrides.pop(get_db, None)
         test_engine.dispose()
+
+def test_session_update_and_delete():
+    # Create a subject with topic
+    subj_resp = client.post("/subjects", json={
+        "name": "Chemistry Test",
+        "exam_date": "2026-11-20",
+        "weightage": 4.0,
+        "topics": [{"name": "Thermodynamics", "est_hours": 2.0}]
+    })
+    assert subj_resp.status_code == 201
+    subj_data = subj_resp.json()
+    subj_id = subj_data["id"]
+
+    # Set availability
+    client.post("/availability", json=[{"weekday": 0, "start": "18:00", "end": "21:00"}])
+
+    # Generate plan
+    plan_resp = client.post("/plan/generate", json={"start_date": "2026-11-02", "prompt": ""})
+    assert plan_resp.status_code == 200
+    sessions = plan_resp.json()["sessions"]
+    assert len(sessions) > 0
+    session_id = sessions[0]["id"]
+
+    # Update session to completed
+    update_resp = client.patch(f"/sessions/{session_id}", json={
+        "status": "completed",
+        "minutes_spent": 45,
+        "note": "Finished first section"
+    })
+    assert update_resp.status_code == 200
+    assert update_resp.json()["status"] == "completed"
+
+    # Update session to missed
+    miss_resp = client.patch(f"/sessions/{session_id}", json={"status": "missed"})
+    assert miss_resp.status_code == 200
+    assert miss_resp.json()["status"] == "missed"
+
+    # Delete session
+    del_resp = client.delete(f"/sessions/{session_id}")
+    assert del_resp.status_code == 204
+
+    # Verify session is deleted (404 on update)
+    retry_update = client.patch(f"/sessions/{session_id}", json={"status": "pending"})
+    assert retry_update.status_code == 404
+
+    # Cleanup subject
+    client.delete(f"/subjects/{subj_id}")
+
